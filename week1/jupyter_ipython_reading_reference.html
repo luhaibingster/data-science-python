@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jupyter + IPython Basics: Student Reading Reference</title>
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --ink: #1f2937;
+      --muted: #5b6472;
+      --line: #dbe3ee;
+      --accent: #2952cc;
+      --accent-soft: #eef3ff;
+      --code-bg: #0f172a;
+      --code-ink: #e5eefc;
+      --good: #edf8f1;
+      --warn: #fff7e8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: linear-gradient(180deg, #eef3fb 0%, var(--bg) 100%);
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 32px 20px 56px;
+    }
+    .hero {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 32px;
+      box-shadow: 0 10px 30px rgba(20, 32, 61, 0.06);
+      margin-bottom: 24px;
+    }
+    h1, h2, h3 { line-height: 1.25; }
+    h1 { margin: 0 0 10px; font-size: 2.2rem; }
+    h2 {
+      margin-top: 0;
+      font-size: 1.45rem;
+      color: #15284b;
+    }
+    h3 { font-size: 1.08rem; margin-bottom: 8px; }
+    p { margin: 10px 0; }
+    .lead {
+      font-size: 1.08rem;
+      color: var(--muted);
+      max-width: 850px;
+    }
+    .toc, .section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 26px;
+      margin-bottom: 18px;
+      box-shadow: 0 8px 24px rgba(20, 32, 61, 0.04);
+    }
+    .toc ul {
+      columns: 2;
+      gap: 24px;
+      padding-left: 20px;
+      margin: 10px 0 0;
+    }
+    @media (max-width: 760px) {
+      .toc ul { columns: 1; }
+      h1 { font-size: 1.8rem; }
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+      margin-top: 16px;
+    }
+    .mini {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 16px;
+      background: #fbfcfe;
+    }
+    .callout {
+      border-left: 5px solid var(--accent);
+      background: var(--accent-soft);
+      padding: 12px 14px;
+      border-radius: 10px;
+      margin: 14px 0;
+    }
+    .tip {
+      background: var(--good);
+      border-left-color: #2f855a;
+    }
+    .warning {
+      background: var(--warn);
+      border-left-color: #b7791f;
+    }
+    code {
+      font-family: Consolas, Monaco, monospace;
+      background: #f3f5f8;
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 0.95em;
+    }
+    pre {
+      background: var(--code-bg);
+      color: var(--code-ink);
+      padding: 14px 16px;
+      border-radius: 12px;
+      overflow-x: auto;
+      border: 1px solid #22304f;
+      font-size: 0.95rem;
+    }
+    pre code {
+      background: transparent;
+      padding: 0;
+      color: inherit;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 10px 12px;
+      vertical-align: top;
+      text-align: left;
+    }
+    th { background: #f5f8fd; }
+    .footer {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 16px;
+    }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>Jupyter + IPython Basics</h1>
+      <p class="lead">
+        This page is a student reading reference for the in-class demo on Jupyter and IPython.
+        It summarizes the core ideas, vocabulary, and beginner commands you should know before
+        doing notebook-based work in Python.
+      </p>
+      <div class="callout">
+        <strong>Main idea:</strong> Jupyter lets you keep <em>code, output, explanation, and visualization</em>
+        together in one place. That is why notebooks are so useful for learning, exploration, and data science.
+      </div>
+    </section>
+
+    <section class="toc">
+      <h2>Contents</h2>
+      <ul>
+        <li>What Jupyter is</li>
+        <li>What IPython is</li>
+        <li>Notebook files and the kernel</li>
+        <li>Cells and execution</li>
+        <li>Code cells vs Markdown cells</li>
+        <li>Basic Markdown</li>
+        <li>IPython magics</li>
+        <li>Help and inspection</li>
+        <li>Notebook shortcuts</li>
+        <li>Common beginner mistakes</li>
+      </ul>
+    </section>
+
+    <section class="section" id="what-is-jupyter">
+      <h2>1) What is Jupyter?</h2>
+      <p>
+        Jupyter is an <strong>interactive computing environment</strong>. In one notebook, you can combine:
+      </p>
+      <div class="grid">
+        <div class="mini"><strong>Code</strong><br>Write Python and run it cell by cell.</div>
+        <div class="mini"><strong>Output</strong><br>See printed results, tables, and errors immediately.</div>
+        <div class="mini"><strong>Explanation</strong><br>Use text to explain what your code is doing.</div>
+        <div class="mini"><strong>Visuals</strong><br>Display plots, images, and charts inline.</div>
+      </div>
+      <p>
+        Jupyter supports the idea of <strong>literate programming</strong>: code and explanation should live together,
+        not as separate disconnected files.
+      </p>
+    </section>
+
+    <section class="section" id="what-is-ipython">
+      <h2>2) What is IPython?</h2>
+      <p>
+        IPython means <strong>Interactive Python</strong>. It is an enhanced Python environment that makes working
+        interactively easier than using plain Python alone.
+      </p>
+      <div class="grid">
+        <div class="mini"><strong>Tab completion</strong><br>Helps finish variable names and methods.</div>
+        <div class="mini"><strong>Magic commands</strong><br>Special shortcuts such as <code>%timeit</code>.</div>
+        <div class="mini"><strong>History</strong><br>Lets you reuse earlier commands.</div>
+        <div class="mini"><strong>Better feedback</strong><br>Improved tracebacks and debugging help.</div>
+      </div>
+      <div class="callout">
+        In a Python notebook, <strong>Jupyter uses IPython as the execution engine</strong> for running your code.
+      </div>
+    </section>
+
+    <section class="section" id="notebook-files">
+      <h2>3) Notebook files and the kernel</h2>
+      <h3>Notebook files</h3>
+      <p>
+        A Jupyter notebook file usually ends with <code>.ipynb</code>. It is <strong>not just a Python script</strong>.
+        It is a structured JSON document that can store code cells, markdown cells, outputs, and metadata.
+      </p>
+      <pre><code>example_notebook.ipynb</code></pre>
+
+      <h3>The kernel</h3>
+      <p>
+        The <strong>kernel</strong> is the running process that actually executes your code. When you run a cell,
+        the code is sent to the kernel.
+      </p>
+      <div class="callout warning">
+        The kernel remembers variables. If you define <code>x = 10</code> in one cell, later cells can use <code>x</code>
+        until the kernel is restarted.
+      </div>
+      <pre><code>x = 10
+x + 5</code></pre>
+    </section>
+
+    <section class="section" id="cells-and-execution">
+      <h2>4) Cells and execution order</h2>
+      <p>
+        A notebook is made of <strong>cells</strong>. You usually work with code cells and markdown cells.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Cell Type</th>
+            <th>Purpose</th>
+            <th>What Happens</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Code cell</td>
+            <td>Run Python code</td>
+            <td>Sent to the kernel and produces output or errors</td>
+          </tr>
+          <tr>
+            <td>Markdown cell</td>
+            <td>Write notes, headings, explanations</td>
+            <td>Rendered as formatted text in the notebook</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>Execution order matters</h3>
+      <p>
+        Notebooks are <strong>not strictly top-to-bottom unless you run them that way</strong>. You can run cell 8 before cell 3.
+        That flexibility is useful, but it can also cause confusion.
+      </p>
+      <div class="callout warning">
+        A notebook may look correct on the page but fail when restarted and run from the top if cells were executed out of order.
+      </div>
+    </section>
+
+    <section class="section" id="running-cells">
+      <h2>5) Running cells</h2>
+      <p>These are the most common actions students should know:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Action</th>
+            <th>Shortcut / Meaning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Run current cell</td>
+            <td><code>Shift + Enter</code></td>
+          </tr>
+          <tr>
+            <td>Run cell, stay in place</td>
+            <td><code>Ctrl + Enter</code></td>
+          </tr>
+          <tr>
+            <td>Run cell, insert cell below</td>
+            <td><code>Alt + Enter</code></td>
+          </tr>
+          <tr>
+            <td>Interrupt long-running code</td>
+            <td>Use the stop/interrupt button</td>
+          </tr>
+          <tr>
+            <td>Restart kernel</td>
+            <td>Clears all variables from memory</td>
+          </tr>
+        </tbody>
+      </table>
+      <pre><code>print("Hello, Jupyter!")</code></pre>
+    </section>
+
+    <section class="section" id="code-vs-markdown">
+      <h2>6) Code cells vs Markdown cells</h2>
+      <div class="grid">
+        <div class="mini">
+          <h3>Code cells</h3>
+          <ul>
+            <li>Executed by the kernel</li>
+            <li>Produce output</li>
+            <li>Can change variable state</li>
+          </ul>
+        </div>
+        <div class="mini">
+          <h3>Markdown cells</h3>
+          <ul>
+            <li>Rendered in the browser</li>
+            <li>Not executed as Python</li>
+            <li>Used for notes, structure, and math</li>
+          </ul>
+        </div>
+      </div>
+      <pre><code># This is Python code
+name = "Alice"
+print(name)</code></pre>
+      <pre><code># This is a Markdown idea, not Python
+## Section Title
+- point 1
+- point 2</code></pre>
+    </section>
+
+    <section class="section" id="markdown-basics">
+      <h2>7) Markdown basics</h2>
+      <p>
+        Markdown is a simple plain-text syntax used to format text. It is very useful in notebooks because it helps you explain your work clearly.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>You type</th>
+            <th>Meaning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code># Title</code></td>
+            <td>Main heading</td>
+          </tr>
+          <tr>
+            <td><code>## Subtitle</code></td>
+            <td>Second-level heading</td>
+          </tr>
+          <tr>
+            <td><code>**bold**</code></td>
+            <td>Bold text</td>
+          </tr>
+          <tr>
+            <td><code>*italic*</code></td>
+            <td>Italic text</td>
+          </tr>
+          <tr>
+            <td><code>- item</code></td>
+            <td>Bullet list</td>
+          </tr>
+          <tr>
+            <td><code>`code`</code></td>
+            <td>Inline code</td>
+          </tr>
+        </tbody>
+      </table>
+      <pre><code># My Analysis
+## Goal
+Understand the dataset.
+
+**Important:** clean the missing values first.
+
+- load data
+- inspect columns
+- summarize findings</code></pre>
+    </section>
+
+    <section class="section" id="magics">
+      <h2>8) IPython magics</h2>
+      <p>
+        <strong>Magic commands</strong> are special IPython commands. They begin with <code>%</code> for a line magic or <code>%%</code> for a cell magic.
+        They are <strong>not normal Python syntax</strong>.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Magic</th>
+            <th>Use</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>%timeit</code></td>
+            <td>Measure how long an expression takes</td>
+          </tr>
+          <tr>
+            <td><code>%pwd</code></td>
+            <td>Show current working directory</td>
+          </tr>
+          <tr>
+            <td><code>%ls</code></td>
+            <td>List files in the directory</td>
+          </tr>
+          <tr>
+            <td><code>%who</code></td>
+            <td>Show defined variables</td>
+          </tr>
+          <tr>
+            <td><code>%%time</code></td>
+            <td>Time the whole cell</td>
+          </tr>
+        </tbody>
+      </table>
+      <pre><code>%timeit sum(range(100000))</code></pre>
+      <pre><code>%%time
+numbers = [x**2 for x in range(1000000)]
+len(numbers)</code></pre>
+    </section>
+
+    <section class="section" id="help-system">
+      <h2>9) Help and object inspection</h2>
+      <p>
+        Jupyter and IPython make it easy to ask for help while you work.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Syntax</th>
+            <th>What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>len?</code></td>
+            <td>Shows basic help for an object</td>
+          </tr>
+          <tr>
+            <td><code>len??</code></td>
+            <td>Shows more detail when available</td>
+          </tr>
+          <tr>
+            <td><code>help(len)</code></td>
+            <td>Uses Python's help system</td>
+          </tr>
+        </tbody>
+      </table>
+      <pre><code>sum?
+list.append?
+help(print)</code></pre>
+      <div class="callout tip">
+        Good students ask the notebook for help early instead of guessing syntax for too long.
+      </div>
+    </section>
+
+    <section class="section" id="shortcuts">
+      <h2>10) Useful notebook shortcuts and modes</h2>
+      <p>
+        Jupyter notebooks usually have two modes:
+      </p>
+      <div class="grid">
+        <div class="mini">
+          <strong>Edit mode</strong><br>
+          You are typing inside a cell.
+        </div>
+        <div class="mini">
+          <strong>Command mode</strong><br>
+          You are controlling notebook actions such as adding or deleting cells.
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Shortcut</th>
+            <th>Meaning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>Esc</code></td>
+            <td>Enter command mode</td>
+          </tr>
+          <tr>
+            <td><code>Enter</code></td>
+            <td>Enter edit mode</td>
+          </tr>
+          <tr>
+            <td><code>A</code></td>
+            <td>Add cell above</td>
+          </tr>
+          <tr>
+            <td><code>B</code></td>
+            <td>Add cell below</td>
+          </tr>
+          <tr>
+            <td><code>M</code></td>
+            <td>Convert selected cell to Markdown</td>
+          </tr>
+          <tr>
+            <td><code>Y</code></td>
+            <td>Convert selected cell to Code</td>
+          </tr>
+          <tr>
+            <td><code>D, D</code></td>
+            <td>Delete selected cell</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section" id="mistakes">
+      <h2>11) Common beginner mistakes</h2>
+      <div class="grid">
+        <div class="mini">
+          <h3>1. Forgetting execution order</h3>
+          <p>A variable may exist only because a previous cell was run earlier.</p>
+        </div>
+        <div class="mini">
+          <h3>2. Confusing Markdown and Python</h3>
+          <p>Markdown formatting is not valid Python code.</p>
+        </div>
+        <div class="mini">
+          <h3>3. Not restarting and re-running</h3>
+          <p>Always test whether your notebook works from top to bottom.</p>
+        </div>
+        <div class="mini">
+          <h3>4. Ignoring the kernel state</h3>
+          <p>Restarting the kernel clears variables, imports, and results stored in memory.</p>
+        </div>
+      </div>
+      <div class="callout warning">
+        Best practice: before submission, <strong>Restart Kernel and Run All</strong>. That is the fastest way to catch hidden notebook problems.
+      </div>
+    </section>
+
+    <section class="section" id="quick-checklist">
+      <h2>12) Quick checklist for students</h2>
+      <ul>
+        <li>I know what a notebook file (<code>.ipynb</code>) is.</li>
+        <li>I understand the role of the kernel.</li>
+        <li>I can tell the difference between a code cell and a markdown cell.</li>
+        <li>I know how to run a cell with <code>Shift + Enter</code>.</li>
+        <li>I know at least one help command such as <code>object?</code>.</li>
+        <li>I know that <code>%timeit</code> is an IPython magic.</li>
+        <li>I understand why cell execution order matters.</li>
+      </ul>
+      <p class="footer">
+        Reading reference prepared from the in-class Jupyter/IPython basics demo and organized for student review.
+      </p>
+    </section>
+  </div>
+</body>
+</html>

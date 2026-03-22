@@ -1,0 +1,109 @@
+order_month,country,channel,marketing_spend,campaign_count
+2024-01,Australia,Marketplace,1585.96,1
+2024-01,Australia,Online,1946.98,3
+2024-01,Australia,Store Pickup,615.43,5
+2024-01,Canada,Marketplace,1073.16,5
+2024-01,Canada,Online,1689.49,2
+2024-01,Canada,Store Pickup,813.22,1
+2024-01,France,Marketplace,1173.69,1
+2024-01,France,Online,1309.59,5
+2024-01,France,Store Pickup,633.11,4
+2024-01,Germany,Marketplace,1357.57,4
+2024-01,Germany,Online,2283.68,2
+2024-01,Germany,Store Pickup,706.9,1
+2024-01,United Kingdom,Marketplace,1843.14,1
+2024-01,United Kingdom,Online,2035.42,3
+2024-01,United Kingdom,Store Pickup,988.12,2
+2024-01,United States,Marketplace,2442.12,1
+2024-01,United States,Online,3724.19,2
+2024-01,United States,Store Pickup,1158.88,5
+2024-02,Australia,Marketplace,1516.05,1
+2024-02,Australia,Online,1604.44,2
+2024-02,Australia,Store Pickup,624.63,3
+2024-02,Canada,Marketplace,1741.82,4
+2024-02,Canada,Online,2603.64,1
+2024-02,Canada,Store Pickup,704.13,3
+2024-02,France,Marketplace,1336.31,4
+2024-02,France,Online,1469.03,1
+2024-02,France,Store Pickup,759.2,4
+2024-02,Germany,Marketplace,1574.57,5
+2024-02,Germany,Online,1851.22,1
+2024-02,Germany,Store Pickup,615.54,1
+2024-02,United Kingdom,Marketplace,1211.37,2
+2024-02,United Kingdom,Online,2758.3,4
+2024-02,United Kingdom,Store Pickup,758.46,1
+2024-02,United States,Marketplace,2003.36,2
+2024-02,United States,Online,3786.11,5
+2024-02,United States,Store Pickup,1503.23,5
+2024-03,Australia,Marketplace,1445.24,1
+2024-03,Australia,Online,2165.85,1
+2024-03,Australia,Store Pickup,526.2,5
+2024-03,Canada,Marketplace,1753.53,4
+2024-03,Canada,Online,2166.59,1
+2024-03,Canada,Store Pickup,718.32,5
+2024-03,France,Marketplace,1298.99,4
+2024-03,France,Online,1817.61,2
+2024-03,France,Store Pickup,890.22,3
+2024-03,Germany,Marketplace,1328.51,5
+2024-03,Germany,Online,2340.56,1
+2024-03,Germany,Store Pickup,884.27,5
+2024-03,United Kingdom,Marketplace,1185.73,2
+2024-03,United Kingdom,Online,1677.09,4
+2024-03,United Kingdom,Store Pickup,740.03,5
+2024-03,United States,Marketplace,2253.89,5
+2024-03,United States,Online,3455.12,1
+2024-03,United States,Store Pickup,1657.72,3
+2024-04,Australia,Marketplace,1456.57,2
+2024-04,Australia,Online,1729.57,4
+2024-04,Australia,Store Pickup,856.88,2
+2024-04,Canada,Marketplace,1492.88,2
+2024-04,Canada,Online,1740.66,3
+2024-04,Canada,Store Pickup,645.75,2
+2024-04,France,Marketplace,1106.13,4
+2024-04,France,Online,1528.56,4
+2024-04,France,Store Pickup,865.78,1
+2024-04,Germany,Marketplace,1252.08,4
+2024-04,Germany,Online,2203.49,3
+2024-04,Germany,Store Pickup,565.21,3
+2024-04,United Kingdom,Marketplace,1475.0,4
+2024-04,United Kingdom,Online,2109.34,5
+2024-04,United Kingdom,Store Pickup,1067.89,3
+2024-04,United States,Marketplace,2833.03,5
+2024-04,United States,Online,2769.47,1
+2024-04,United States,Store Pickup,1646.16,2
+2024-05,Australia,Marketplace,1132.73,4
+2024-05,Australia,Online,2229.56,2
+2024-05,Australia,Store Pickup,858.23,3
+2024-05,Canada,Marketplace,1288.83,3
+2024-05,Canada,Online,1921.3,1
+2024-05,Canada,Store Pickup,631.23,2
+2024-05,France,Marketplace,1030.84,3
+2024-05,France,Online,2265.42,5
+2024-05,France,Store Pickup,623.79,4
+2024-05,Germany,Marketplace,1069.91,5
+2024-05,Germany,Online,2193.93,4
+2024-05,Germany,Store Pickup,944.1,2
+2024-05,United Kingdom,Marketplace,1474.14,2
+2024-05,United Kingdom,Online,1880.7,3
+2024-05,United Kingdom,Store Pickup,916.14,1
+2024-05,United States,Marketplace,1942.56,4
+2024-05,United States,Online,2861.03,2
+2024-05,United States,Store Pickup,1416.66,1
+2024-06,Australia,Marketplace,1511.12,5
+2024-06,Australia,Online,1644.41,1
+2024-06,Australia,Store Pickup,858.73,2
+2024-06,Canada,Marketplace,1497.74,4
+2024-06,Canada,Online,2563.22,3
+2024-06,Canada,Store Pickup,956.68,1
+2024-06,France,Marketplace,869.07,3
+2024-06,France,Online,2142.11,5
+2024-06,France,Store Pickup,512.54,4
+2024-06,Germany,Marketplace,1015.76,1
+2024-06,Germany,Online,1388.25,3
+2024-06,Germany,Store Pickup,812.96,3
+2024-06,United Kingdom,Marketplace,1292.19,5
+2024-06,United Kingdom,Online,1980.43,5
+2024-06,United Kingdom,Store Pickup,973.03,3
+2024-06,United States,Marketplace,1706.15,5
+2024-06,United States,Online,2488.56,3
+2024-06,United States,Store Pickup,1378.02,1

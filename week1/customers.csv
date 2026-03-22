@@ -1,0 +1,650 @@
+customer_id,home_country,home_city,dominant_segment,total_orders,lifetime_revenue,signup_date,customer_tier,loyalty_member,acquisition_channel
+C10000,Germany,Austin,Consumer,6,627.09,2023-07-13,Gold,Yes,Organic Search
+C10001,United Kingdom,Birmingham,Consumer,3,155.5,2022-01-08,Gold,Yes,Referral
+C10002,United States,San Jose,Consumer,10,426.45,2022-05-12,Gold,No,Organic Search
+C10003,United States,Vancouver,Small Business,5,264.68,2022-12-07,Gold,Yes,Email
+C10004,Australia,Chicago,Consumer,4,231.0,2022-09-09,Bronze,Yes,Social
+C10005,United States,London,Consumer,7,289.85,2022-03-14,Gold,Yes,Organic Search
+C10006,Canada,Chicago,Consumer,5,222.95999999999998,2023-02-26,Gold,Yes,Paid Search
+C10007,France,Paris,Small Business,5,449.22,2023-03-16,Bronze,No,Organic Search
+C10008,Australia,Berlin,Small Business,4,178.0,2024-03-21,Silver,No,Paid Search
+C10009,United Kingdom,Austin,Consumer,7,397.2,2023-02-01,Gold,Yes,Email
+C10010,Germany,Hamburg,Consumer,4,173.0,2023-08-27,Bronze,Yes,Email
+C10011,United Kingdom,Chicago,Consumer,6,503.6,2023-09-15,Bronze,Yes,Organic Search
+C10012,Canada,Birmingham,Consumer,6,183.15,2023-07-30,Gold,No,Email
+C10013,United Kingdom,Birmingham,Consumer,5,349.85,2022-09-20,Bronze,Yes,Organic Search
+C10014,United Kingdom,Birmingham,Consumer,12,648.14,2022-04-20,Gold,Yes,Referral
+C10015,United States,Brisbane,Small Business,6,142.8,2023-07-03,Silver,No,Organic Search
+C10016,Australia,Sydney,Consumer,4,329.4,2023-03-23,Silver,Yes,Email
+C10017,United Kingdom,Birmingham,Consumer,10,405.19,2023-05-11,Silver,Yes,Paid Search
+C10018,Germany,Berlin,Consumer,12,712.73,2022-04-08,Bronze,No,Social
+C10019,Australia,Melbourne,Consumer,11,941.15,2022-03-21,Bronze,No,Paid Search
+C10020,Canada,Montreal,Small Business,10,566.03,2023-10-11,Bronze,Yes,Organic Search
+C10021,Germany,New York,Consumer,6,229.3,2022-01-08,Bronze,Yes,Organic Search
+C10022,Canada,Austin,Consumer,4,146.06,2023-04-26,Silver,Yes,Email
+C10023,United States,Chicago,Consumer,7,342.5,2022-12-04,Silver,No,Organic Search
+C10024,Australia,Vancouver,Consumer,9,554.02,2023-10-01,Gold,Yes,Organic Search
+C10025,United States,San Jose,Consumer,9,719.8,2024-03-03,Bronze,Yes,Organic Search
+C10026,Australia,Brisbane,Consumer,5,284.5,2023-09-16,Bronze,Yes,Email
+C10027,Australia,Sydney,Consumer,6,269.3,2022-01-26,Silver,No,Organic Search
+C10028,United States,Austin,Consumer,9,602.94,2024-01-22,Gold,Yes,Paid Search
+C10029,United Kingdom,Birmingham,Consumer,7,253.8,2024-04-29,Bronze,Yes,Referral
+C10030,Australia,San Jose,Consumer,8,359.28,2024-02-12,Silver,No,Organic Search
+C10031,United States,San Jose,Consumer,8,279.0,2023-10-21,Bronze,No,Referral
+C10032,United States,Austin,Consumer,5,732.8,2022-11-22,Gold,No,Paid Search
+C10033,United States,Austin,Small Business,3,148.6,2023-10-01,Bronze,Yes,Referral
+C10034,Germany,Berlin,Consumer,1,39.0,2023-04-19,Silver,No,Referral
+C10035,United States,Austin,Consumer,6,150.32,2022-06-12,Gold,No,Paid Search
+C10036,United Kingdom,Birmingham,Consumer,4,68.00999999999999,2022-07-08,Silver,Yes,Referral
+C10037,United States,London,Consumer,7,460.25,2023-06-03,Silver,Yes,Referral
+C10038,United Kingdom,Berlin,Consumer,12,735.56,2024-01-24,Silver,Yes,Social
+C10039,Canada,Paris,Consumer,9,584.47,2023-09-25,Silver,No,Paid Search
+C10040,United States,Chicago,Consumer,7,636.46,2024-02-03,Silver,Yes,Organic Search
+C10041,United Kingdom,Birmingham,Consumer,4,169.35,2024-03-13,Bronze,Yes,Referral
+C10042,Canada,Lyon,Consumer,4,192.5,2023-05-24,Bronze,Yes,Social
+C10043,United States,Austin,Consumer,6,370.7,2022-02-06,Silver,Yes,Social
+C10044,United Kingdom,Austin,Consumer,13,923.1,2024-02-02,Bronze,Yes,Referral
+C10045,Canada,Toronto,Consumer,9,713.9,2022-03-31,Bronze,No,Email
+C10046,United States,San Jose,Consumer,10,417.95,2022-03-11,Bronze,Yes,Social
+C10047,France,Brisbane,Consumer,4,198.14,2024-05-06,Silver,Yes,Social
+C10048,United States,Austin,Consumer,16,1329.64,2022-10-10,Bronze,Yes,Organic Search
+C10049,United States,Chicago,Corporate,2,162.0,2023-12-04,Gold,No,Email
+C10050,Canada,Austin,Consumer,6,176.15,2024-01-20,Bronze,Yes,Paid Search
+C10051,United States,Seattle,Consumer,6,246.3,2022-11-13,Bronze,Yes,Referral
+C10052,United Kingdom,Birmingham,Small Business,4,239.4,2023-10-22,Bronze,Yes,Paid Search
+C10053,United States,San Jose,Consumer,9,648.07,2022-04-30,Gold,Yes,Organic Search
+C10054,United Kingdom,Birmingham,Small Business,5,245.98000000000002,2024-01-06,Gold,Yes,Social
+C10055,United States,Chicago,Consumer,9,366.02,2023-07-26,Silver,Yes,Email
+C10056,Germany,Munich,Corporate,5,264.5,2023-12-31,Silver,Yes,Social
+C10057,United States,Austin,Consumer,14,681.0699999999999,2024-03-25,Bronze,No,Email
+C10058,United States,New York,Consumer,8,540.9,2022-07-29,Silver,Yes,Organic Search
+C10059,United States,San Jose,Consumer,10,318.03,2022-07-04,Bronze,No,Organic Search
+C10060,United States,Austin,Consumer,8,681.79,2023-12-07,Bronze,No,Paid Search
+C10061,Germany,Munich,Consumer,4,196.5,2023-10-05,Bronze,No,Organic Search
+C10062,United States,Austin,Consumer,4,147.8,2022-04-05,Silver,Yes,Referral
+C10063,United Kingdom,Chicago,Consumer,9,700.9,2022-06-12,Bronze,No,Social
+C10064,United States,Austin,Consumer,4,117.15,2022-07-06,Gold,Yes,Referral
+C10065,United States,Chicago,Consumer,6,334.9,2023-10-02,Silver,Yes,Social
+C10066,Australia,Chicago,Consumer,7,462.83000000000004,2022-10-01,Silver,No,Paid Search
+C10067,Australia,Brisbane,Consumer,4,273.22,2022-05-04,Bronze,Yes,Paid Search
+C10068,United States,Chicago,Consumer,8,412.93,2022-09-16,Bronze,Yes,Organic Search
+C10069,United States,New York,Consumer,9,401.3,2024-05-25,Silver,No,Organic Search
+C10070,United States,Austin,Consumer,8,603.41,2024-03-28,Bronze,Yes,Email
+C10071,United States,San Jose,Consumer,5,285.9,2022-02-13,Silver,Yes,Paid Search
+C10072,United States,Seattle,Consumer,14,1067.1,2022-07-03,Silver,Yes,Paid Search
+C10073,Australia,Marseille,Consumer,6,483.92,2022-11-12,Bronze,Yes,Email
+C10074,Canada,Toronto,Consumer,11,810.35,2022-02-10,Silver,No,Organic Search
+C10075,Canada,Hamburg,Consumer,3,146.22,2023-07-21,Bronze,Yes,Organic Search
+C10076,Canada,Berlin,Small Business,5,171.32,2022-10-27,Bronze,No,Referral
+C10077,Australia,Berlin,Consumer,5,147.9,2023-07-03,Bronze,Yes,Referral
+C10078,Australia,Brisbane,Consumer,6,257.7,2022-04-16,Gold,Yes,Paid Search
+C10079,Canada,London,Consumer,6,260.06,2022-05-31,Silver,Yes,Referral
+C10080,United States,Chicago,Consumer,7,335.7,2023-05-02,Bronze,Yes,Social
+C10081,France,Lyon,Consumer,5,224.82,2022-03-29,Bronze,No,Organic Search
+C10082,Canada,Vancouver,Small Business,10,279.45,2022-11-21,Bronze,Yes,Referral
+C10083,France,Birmingham,Consumer,7,323.08,2022-09-26,Bronze,Yes,Referral
+C10084,United States,Montreal,Consumer,8,703.0,2024-02-14,Silver,Yes,Paid Search
+C10085,Canada,Berlin,Consumer,10,584.85,2022-07-14,Bronze,No,Referral
+C10086,Australia,Brisbane,Consumer,3,295.7,2023-07-17,Gold,No,Organic Search
+C10087,United States,Berlin,Consumer,4,397.0,2023-10-13,Gold,Yes,Organic Search
+C10088,France,Austin,Consumer,7,440.1,2022-08-01,Bronze,Yes,Referral
+C10089,United States,Chicago,Consumer,11,663.4,2022-10-29,Bronze,Yes,Paid Search
+C10090,United States,Austin,Consumer,7,357.68,2022-06-16,Bronze,Yes,Organic Search
+C10091,United States,San Jose,Consumer,2,68.4,2023-08-27,Silver,Yes,Referral
+C10092,United Kingdom,London,Consumer,7,464.0,2022-04-09,Silver,No,Referral
+C10093,United States,Austin,Consumer,7,733.7,2024-05-09,Gold,Yes,Organic Search
+C10094,United Kingdom,Manchester,Small Business,8,421.78,2023-03-20,Bronze,No,Email
+C10095,Germany,Berlin,Consumer,6,397.38,2023-09-04,Bronze,Yes,Paid Search
+C10096,United Kingdom,London,Consumer,10,405.5,2024-03-26,Bronze,Yes,Organic Search
+C10097,France,Brisbane,Consumer,6,258.95,2022-11-09,Gold,Yes,Email
+C10098,United States,Austin,Small Business,9,533.7,2022-08-13,Bronze,Yes,Paid Search
+C10099,United Kingdom,Birmingham,Consumer,6,306.6,2023-09-05,Bronze,Yes,Paid Search
+C10100,Canada,Marseille,Consumer,3,162.5,2022-01-18,Bronze,Yes,Referral
+C10101,United States,Austin,Consumer,8,241.0,2024-02-25,Silver,No,Organic Search
+C10102,United Kingdom,Manchester,Consumer,8,669.63,2023-11-14,Gold,Yes,Paid Search
+C10103,Canada,Lyon,Consumer,6,257.55,2023-02-21,Bronze,No,Referral
+C10104,United States,Berlin,Consumer,9,583.37,2023-01-01,Bronze,No,Referral
+C10105,United States,Chicago,Consumer,7,539.15,2023-05-24,Silver,No,Social
+C10106,Germany,Hamburg,Consumer,5,154.2,2024-02-06,Silver,Yes,Email
+C10107,United States,Hamburg,Consumer,8,684.61,2022-09-09,Bronze,No,Referral
+C10108,United States,Chicago,Consumer,6,223.6,2022-07-28,Bronze,No,Email
+C10109,United Kingdom,Birmingham,Consumer,9,478.45,2023-08-15,Gold,No,Organic Search
+C10110,Canada,Toronto,Consumer,8,473.62,2023-09-07,Bronze,Yes,Organic Search
+C10111,Germany,Hamburg,Consumer,5,288.29,2022-07-01,Silver,Yes,Paid Search
+C10112,Canada,Montreal,Consumer,6,367.88,2024-04-10,Bronze,No,Social
+C10113,United States,Austin,Consumer,6,313.2,2023-10-04,Gold,No,Social
+C10114,Canada,Austin,Consumer,7,403.02,2023-02-15,Bronze,No,Referral
+C10115,Canada,Seattle,Consumer,5,212.6,2024-04-15,Silver,Yes,Paid Search
+C10116,United States,Austin,Consumer,6,474.58,2022-11-15,Bronze,Yes,Paid Search
+C10117,United States,Chicago,Consumer,12,709.64,2023-10-12,Bronze,No,Referral
+C10118,United States,New York,Consumer,5,283.0,2023-09-27,Silver,No,Referral
+C10119,Germany,Berlin,Consumer,8,697.4,2022-05-25,Bronze,No,Email
+C10120,United States,Austin,Consumer,7,335.52,2023-10-20,Gold,Yes,Social
+C10121,United States,Seattle,Consumer,7,522.0,2022-05-18,Silver,No,Referral
+C10122,United States,Chicago,Consumer,7,309.84000000000003,2022-08-15,Bronze,Yes,Referral
+C10123,United Kingdom,London,Consumer,4,299.22,2024-02-23,Silver,No,Paid Search
+C10124,United States,Austin,Consumer,5,251.5,2023-08-09,Bronze,No,Social
+C10125,United Kingdom,London,Consumer,7,655.25,2023-07-23,Bronze,Yes,Paid Search
+C10126,United States,Hamburg,Consumer,5,295.85,2022-05-19,Bronze,Yes,Referral
+C10127,United States,Austin,Consumer,3,90.8,2022-04-02,Bronze,No,Social
+C10128,Australia,Birmingham,Consumer,3,96.1,2022-09-09,Bronze,No,Paid Search
+C10129,United Kingdom,Birmingham,Consumer,7,546.22,2024-01-26,Gold,No,Social
+C10130,Canada,Toronto,Consumer,9,358.18,2022-05-01,Bronze,Yes,Email
+C10131,United Kingdom,London,Consumer,7,418.7,2023-05-17,Bronze,No,Referral
+C10132,Germany,Munich,Small Business,8,781.72,2024-05-18,Bronze,Yes,Referral
+C10133,United States,Seattle,Consumer,10,1037.85,2022-12-31,Bronze,No,Referral
+C10134,United States,Brisbane,Consumer,9,354.02,2023-12-16,Bronze,Yes,Paid Search
+C10135,Australia,Birmingham,Consumer,9,262.72,2023-12-24,Bronze,Yes,Social
+C10136,Canada,Birmingham,Consumer,5,691.0,2023-01-29,Bronze,No,Referral
+C10137,France,Seattle,Small Business,5,63.0,2023-04-01,Bronze,No,Social
+C10138,Germany,Chicago,Consumer,5,509.27,2023-11-22,Bronze,Yes,Social
+C10139,France,Berlin,Consumer,9,563.53,2023-10-24,Silver,No,Organic Search
+C10140,United Kingdom,Manchester,Small Business,6,258.52,2022-09-16,Bronze,Yes,Organic Search
+C10141,United Kingdom,Manchester,Small Business,7,343.6,2022-10-07,Gold,Yes,Social
+C10142,United States,Austin,Small Business,8,301.57,2022-07-26,Bronze,No,Paid Search
+C10143,United Kingdom,London,Consumer,6,300.46000000000004,2022-01-22,Silver,Yes,Organic Search
+C10144,Canada,New York,Consumer,2,72.0,2022-08-20,Gold,Yes,Social
+C10145,Germany,Munich,Consumer,3,129.6,2022-07-15,Gold,Yes,Referral
+C10146,United States,Hamburg,Consumer,13,640.53,2023-11-11,Bronze,Yes,Social
+C10147,Australia,Austin,Consumer,6,265.85,2023-08-19,Bronze,Yes,Email
+C10148,United States,Birmingham,Consumer,3,116.46000000000001,2023-04-04,Silver,No,Social
+C10149,United States,Chicago,Consumer,8,477.9,2023-03-13,Bronze,No,Referral
+C10150,United States,San Jose,Consumer,9,583.15,2022-09-25,Bronze,Yes,Referral
+C10151,United States,Austin,Consumer,3,211.4,2023-08-31,Silver,Yes,Referral
+C10152,United States,Chicago,Consumer,7,262.0,2024-05-12,Gold,No,Organic Search
+C10153,United States,Munich,Consumer,6,122.5,2023-06-05,Bronze,Yes,Organic Search
+C10154,Canada,Montreal,Consumer,5,415.5,2023-04-02,Silver,Yes,Social
+C10155,United States,Birmingham,Consumer,5,254.98000000000002,2023-08-19,Gold,Yes,Social
+C10156,United States,New York,Corporate,8,550.28,2023-07-17,Silver,Yes,Referral
+C10157,United States,Montreal,Consumer,8,289.0,2022-11-23,Bronze,No,Referral
+C10158,United States,Austin,Consumer,6,424.44,2023-04-13,Gold,Yes,Social
+C10159,United Kingdom,Austin,Consumer,6,257.42,2022-08-17,Gold,No,Paid Search
+C10160,Canada,Toronto,Small Business,5,262.0,2022-07-04,Bronze,No,Organic Search
+C10161,United States,Seattle,Consumer,8,617.2,2023-08-25,Bronze,Yes,Email
+C10162,United Kingdom,Birmingham,Consumer,6,443.38,2022-02-21,Bronze,Yes,Organic Search
+C10163,United States,Austin,Consumer,5,439.0,2023-07-27,Bronze,No,Organic Search
+C10164,United States,Chicago,Consumer,4,93.8,2023-03-26,Gold,Yes,Referral
+C10165,United States,New York,Consumer,6,460.28,2022-01-12,Gold,Yes,Referral
+C10166,United States,New York,Consumer,6,197.3,2023-12-27,Bronze,Yes,Email
+C10167,United Kingdom,Birmingham,Consumer,2,192.0,2023-06-11,Silver,No,Email
+C10168,Germany,Berlin,Consumer,6,340.25,2022-10-27,Bronze,Yes,Email
+C10169,Canada,Birmingham,Small Business,6,224.85,2022-09-12,Bronze,No,Organic Search
+C10170,United States,Munich,Consumer,10,514.15,2024-04-08,Gold,Yes,Email
+C10171,United States,Birmingham,Consumer,11,648.65,2024-04-26,Silver,No,Paid Search
+C10172,United Kingdom,Birmingham,Consumer,7,382.99,2023-01-04,Bronze,Yes,Organic Search
+C10173,United Kingdom,Austin,Consumer,7,392.6,2022-05-12,Bronze,No,Email
+C10174,United States,Munich,Small Business,4,493.95,2022-06-11,Gold,No,Social
+C10175,Germany,Hamburg,Consumer,3,157.0,2023-04-04,Gold,No,Organic Search
+C10176,France,Marseille,Consumer,2,84.0,2024-05-08,Silver,No,Paid Search
+C10177,United States,Chicago,Consumer,10,530.88,2022-11-14,Bronze,No,Referral
+C10178,United States,Chicago,Consumer,12,662.52,2023-08-03,Bronze,No,Organic Search
+C10179,United States,Chicago,Consumer,12,645.82,2023-04-30,Bronze,Yes,Email
+C10180,United Kingdom,Chicago,Consumer,8,512.85,2024-02-27,Bronze,Yes,Paid Search
+C10181,Australia,Austin,Consumer,3,403.25,2023-10-24,Silver,Yes,Paid Search
+C10182,United States, ,Consumer,10,523.75,2022-01-12,Bronze,No,Paid Search
+C10183,France,Paris,Consumer,12,484.75,2023-12-05,Silver,No,Referral
+C10184,Germany,Berlin,Small Business,9,496.75,2023-10-24,Gold,Yes,Organic Search
+C10185,United States,Seattle,Consumer,5,151.88,2022-08-14,Bronze,No,Organic Search
+C10186,United States,San Jose,Consumer,5,139.55,2022-04-26,Bronze,No,Social
+C10187,United States,Chicago,Consumer,7,313.89,2023-05-29,Gold,No,Referral
+C10188,United States,Birmingham,Small Business,14,710.55,2023-10-11,Bronze,No,Organic Search
+C10189,United States,Austin,Consumer,6,534.8,2023-09-23,Bronze,Yes,Organic Search
+C10190,United Kingdom,London,Consumer,8,414.45000000000005,2022-06-04,Silver,Yes,Paid Search
+C10191,United States,San Jose,Consumer,4,281.53,2023-08-15,Silver,No,Paid Search
+C10192,Germany,Berlin,Consumer,12,633.75,2022-08-14,Silver,Yes,Social
+C10193,United States,Austin,Consumer,7,359.0,2024-04-23,Silver,Yes,Paid Search
+C10194,United States,Austin,Consumer,6,294.51,2022-11-17,Silver,No,Social
+C10195,United States,Manchester,Consumer,8,459.03999999999996,2023-06-02,Gold,Yes,Referral
+C10196,United States,Montreal,Consumer,3,110.65,2024-04-27,Silver,Yes,Referral
+C10197,United States,Chicago,Consumer,9,730.8,2023-08-23,Bronze,No,Referral
+C10198,Canada,Toronto,Consumer,10,753.1,2022-02-26,Bronze,No,Social
+C10199,Germany,Hamburg,Consumer,11,357.2,2022-01-15,Bronze,No,Referral
+C10200,United States,Austin,Consumer,7,459.59000000000003,2022-11-21,Bronze,Yes,Organic Search
+C10201,United States,New York,Consumer,8,484.13,2022-05-11,Bronze,Yes,Organic Search
+C10202,United States,Austin,Consumer,7,444.7,2022-08-20,Gold,Yes,Organic Search
+C10203,United States,New York,Consumer,10,605.15,2022-07-09,Silver,No,Referral
+C10204,Canada,Montreal,Consumer,4,266.8,2024-05-07,Bronze,Yes,Paid Search
+C10205,United States,San Jose,Consumer,7,305.43,2022-11-27,Silver,Yes,Referral
+C10206,United States,Austin,Consumer,6,227.95,2023-09-16,Silver,No,Organic Search
+C10207,United States,Austin,Consumer,8,473.15,2022-07-12,Gold,No,Organic Search
+C10208,Australia,Sydney,Consumer,7,446.14,2023-08-13,Gold,Yes,Social
+C10209,Canada,Vancouver,Consumer,6,271.5,2023-06-02,Bronze,Yes,Email
+C10210,France,Hamburg,Consumer,7,297.3,2023-09-20,Silver,No,Email
+C10211,Australia,Brisbane,Consumer,4,257.4,2022-05-17,Gold,No,Paid Search
+C10212,United States,Austin,Consumer,8,500.56,2022-03-26,Bronze,Yes,Email
+C10213,Germany,Berlin,Consumer,6,560.3,2023-04-20,Bronze,Yes,Paid Search
+C10214,Australia,Berlin,Consumer,7,405.6,2022-02-19,Silver,Yes,Referral
+C10215,United States,Austin,Consumer,7,221.8,2022-07-18,Gold,No,Organic Search
+C10216,Germany,Brisbane,Consumer,6,202.8,2023-01-14,Bronze,Yes,Social
+C10217,United States,Munich,Consumer,9,601.75,2024-01-22,Silver,Yes,Organic Search
+C10218,United States,Austin,Consumer,8,253.65,2022-06-22,Bronze,No,Paid Search
+C10219,Canada,Montreal,Consumer,12,647.75,2022-01-21,Bronze,No,Paid Search
+C10220,United States,Seattle,Consumer,7,597.65,2024-02-22,Silver,Yes,Social
+C10221,Germany,Chicago,Consumer,2,105.80000000000001,2022-01-29,Bronze,Yes,Email
+C10222,Canada,Berlin,Consumer,6,386.38,2023-04-13,Silver,Yes,Email
+C10223,United Kingdom,London,Consumer,8,276.25,2023-04-03,Gold,Yes,Social
+C10224,United Kingdom,Birmingham,Small Business,3,208.5,2023-03-08,Gold,Yes,Social
+C10225,Germany,Berlin,Consumer,8,602.11,2022-04-10,Gold,Yes,Referral
+C10226,Canada,Chicago,Consumer,11,521.46,2022-03-09,Bronze,Yes,Organic Search
+C10227,Canada,Austin,Consumer,7,354.45,2023-04-02,Silver,Yes,Paid Search
+C10228,Australia,Chicago,Consumer,4,142.8,2022-07-03,Bronze,Yes,Email
+C10229,United Kingdom,London,Consumer,6,367.88,2022-03-20,Gold,Yes,Email
+C10230,United States,New York,Consumer,4,139.94,2023-02-01,Silver,Yes,Social
+C10231,United States,Seattle,Consumer,10,551.62,2023-12-13,Silver,Yes,Referral
+C10232,United Kingdom,Manchester,Consumer,6,241.15,2022-02-05,Bronze,No,Social
+C10233,United States,San Jose,Consumer,5,324.2,2023-11-30,Bronze,Yes,Organic Search
+C10234,United Kingdom,London,Consumer,8,416.07,2023-08-17,Silver,Yes,Referral
+C10235,United States,Berlin,Consumer,9,618.83,2022-12-19,Bronze,No,Social
+C10236,United States,Manchester,Consumer,6,219.0,2022-06-16,Bronze,Yes,Organic Search
+C10237,United Kingdom,London,Consumer,10,528.88,2022-07-01,Bronze,No,Organic Search
+C10238,Germany,New York,Consumer,11,511.85,2023-06-18,Gold,No,Email
+C10239,United States,Chicago,Consumer,5,211.2,2022-10-05,Bronze,Yes,Referral
+C10240,Australia,Berlin,Small Business,3,211.46,2023-03-24,Bronze,Yes,Paid Search
+C10241,United States,Birmingham,Consumer,8,543.19,2023-12-30,Bronze,Yes,Referral
+C10242,United States,Chicago,Consumer,7,363.92,2022-12-03,Bronze,No,Email
+C10243,United States,Austin,Consumer,4,467.0,2022-06-20,Bronze,Yes,Paid Search
+C10244,United States,Austin,Consumer,1,55.0,2024-03-29,Gold,Yes,Referral
+C10245,France,Birmingham,Consumer,5,297.0,2024-04-18,Bronze,No,Organic Search
+C10246,United Kingdom,London,Consumer,10,632.0,2023-06-09,Bronze,Yes,Organic Search
+C10247,Canada,Lyon,Small Business,7,377.69,2023-06-15,Gold,Yes,Social
+C10248,United States,San Jose,Consumer,10,665.45,2023-10-17,Bronze,Yes,Paid Search
+C10249,United States,New York,Consumer,3,246.0,2024-04-10,Bronze,No,Referral
+C10250,United States,Manchester,Consumer,4,137.65,2023-02-12,Bronze,Yes,Paid Search
+C10251,Canada,Austin,Consumer,7,332.65,2022-04-23,Bronze,Yes,Paid Search
+C10252,Canada,Montreal,Consumer,4,378.5,2023-05-28,Silver,Yes,Referral
+C10253,Germany,Montreal,Consumer,7,184.96,2022-03-04,Bronze,No,Organic Search
+C10254,United States,Brisbane,Consumer,9,223.85,2023-12-24,Bronze,Yes,Organic Search
+C10255,United States,Austin,Consumer,5,267.7,2022-03-03,Bronze,Yes,Paid Search
+C10256,United States,Chicago,Consumer,3,51.0,2023-11-19,Silver,Yes,Paid Search
+C10257,Australia,Brisbane,Consumer,3,163.5,2022-05-20,Bronze,No,Social
+C10258,United Kingdom,New York,Consumer,6,315.0,2023-04-13,Silver,Yes,Email
+C10259,United Kingdom,Birmingham,Consumer,5,238.25,2022-04-25,Silver,No,Referral
+C10260,United States,Austin,Consumer,5,299.5,2022-08-17,Silver,Yes,Referral
+C10261,United States,Austin,Consumer,7,454.08,2024-04-28,Gold,No,Organic Search
+C10262,Canada,Austin,Consumer,7,296.52,2022-01-31,Bronze,Yes,Referral
+C10263,United States,Chicago,Small Business,5,249.4,2024-03-09,Silver,Yes,Organic Search
+C10264,Canada,Chicago,Consumer,9,543.22,2024-03-21,Silver,Yes,Email
+C10265,United Kingdom,London,Consumer,7,468.65,2022-12-21,Bronze,Yes,Email
+C10266,Canada,Manchester,Consumer,11,500.05,2024-03-18,Bronze,Yes,Referral
+C10267,United Kingdom,London,Consumer,10,1077.58,2023-06-27,Bronze,No,Organic Search
+C10268,United Kingdom,London,Consumer,10,401.82,2024-01-29,Bronze,Yes,Social
+C10269,United States,Chicago,Consumer,11,576.25,2022-04-28,Gold,Yes,Social
+C10270,United States,Austin,Small Business,6,408.34000000000003,2023-08-01,Silver,Yes,Organic Search
+C10271,Australia,Sydney,Consumer,7,393.4,2024-04-09,Bronze,No,Organic Search
+C10272,United Kingdom,Austin,Consumer,7,271.7,2023-01-29,Bronze,Yes,Paid Search
+C10273,United States,New York,Consumer,7,343.9,2022-01-25,Bronze,No,Paid Search
+C10274,United Kingdom,Manchester,Consumer,10,511.6,2022-12-06,Silver,Yes,Email
+C10275,France,Marseille,Consumer,3,272.95,2023-10-04,Gold,Yes,Paid Search
+C10276,United States,Chicago,Consumer,8,534.0,2023-08-06,Gold,Yes,Email
+C10277,United States,Austin,Consumer,8,472.70000000000005,2023-02-22,Bronze,Yes,Paid Search
+C10278,United Kingdom,Berlin,Consumer,9,716.5699999999999,2022-03-20,Silver,No,Referral
+C10279,Australia,Brisbane,Consumer,6,339.7,2022-02-25,Silver,No,Email
+C10280,United States,Birmingham,Consumer,10,730.92,2022-05-29,Bronze,No,Organic Search
+C10281,United States,Austin,Small Business,2,70.95,2024-05-15,Bronze,Yes,Referral
+C10282,United States,Birmingham,Consumer,11,567.1800000000001,2023-10-18,Gold,No,Social
+C10283,United States,Chicago,Consumer,8,503.0,2022-10-04,Silver,Yes,Organic Search
+C10284,Germany,Berlin,Consumer,7,219.85,2022-05-11,Silver,Yes,Organic Search
+C10285,United States,Chicago,Consumer,4,136.55,2022-04-22,Bronze,No,Referral
+C10286,United Kingdom,Birmingham,Consumer,7,436.3,2022-07-03,Silver,Yes,Organic Search
+C10287,Germany,Munich,Consumer,2,327.0,2023-06-20,Gold,No,Paid Search
+C10288,Germany,Berlin,Consumer,7,508.5,2022-02-07,Bronze,Yes,Paid Search
+C10289,Canada,Chicago,Consumer,5,416.8,2022-01-27,Bronze,Yes,Organic Search
+C10290,United States,Hamburg,Consumer,11,402.6,2023-01-16,Silver,Yes,Organic Search
+C10291,United States,Austin,Consumer,13,475.1,2022-10-24,Silver,No,Referral
+C10292,United States,San Jose,Consumer,10,412.68,2023-03-02,Gold,No,Social
+C10293,United States,London,Consumer,9,247.0,2024-04-28,Bronze,No,Social
+C10294,United Kingdom,Birmingham,Consumer,5,311.0,2023-08-24,Bronze,No,Paid Search
+C10295,United Kingdom,Birmingham,Consumer,2,120.0,2024-02-14,Bronze,Yes,Organic Search
+C10296,United States,Birmingham,Consumer,8,435.3,2023-08-07,Bronze,No,Paid Search
+C10297,United States,Austin,Consumer,3,179.91,2022-08-01,Bronze,No,Paid Search
+C10298,United Kingdom,Manchester,Consumer,8,826.4,2024-02-02,Gold,No,Referral
+C10299,United States,Austin,Consumer,12,402.55,2023-05-08,Bronze,Yes,Social
+C10300,United States,Chicago,Consumer,6,287.38,2023-12-28,Bronze,Yes,Paid Search
+C10301,Australia,Hamburg,Consumer,13,1025.3700000000001,2023-11-29,Bronze,No,Referral
+C10302,United States,San Jose,Consumer,7,455.81,2022-08-10,Silver,Yes,Referral
+C10303,France,Lyon,Consumer,7,368.08,2024-05-23,Bronze,Yes,Referral
+C10304,United States,Manchester,Consumer,10,449.05,2023-06-17,Bronze,No,Referral
+C10305,Germany,Chicago,Consumer,10,310.1,2022-06-30,Bronze,Yes,Paid Search
+C10306,United States,Austin,Consumer,6,186.1,2023-10-23,Gold,Yes,Paid Search
+C10307,Australia,Brisbane,Consumer,5,222.9,2023-04-02,Bronze,No,Social
+C10308,Canada,Montreal,Consumer,16,1205.73,2023-06-24,Bronze,Yes,Email
+C10309,United States,Seattle,Consumer,6,306.04,2022-12-30,Silver,No,Organic Search
+C10310,United States,New York,Consumer,10,597.1,2023-12-09,Silver,Yes,Social
+C10311,United States,Chicago,Consumer,9,467.11,2023-06-23,Bronze,Yes,Email
+C10312,United States,London,Consumer,11,723.85,2023-03-15,Bronze,No,Email
+C10313,France,Marseille,Consumer,6,320.7,2022-03-30,Bronze,No,Organic Search
+C10314,Germany,Berlin,Consumer,8,557.55,2022-01-29,Silver,No,Organic Search
+C10315,Canada,Manchester,Consumer,5,322.2,2022-07-31,Bronze,Yes,Paid Search
+C10316,United States,Munich,Consumer,6,249.85,2023-12-09,Bronze,Yes,Paid Search
+C10317,United Kingdom,Birmingham,Consumer,3,148.25,2022-03-19,Gold,Yes,Paid Search
+C10318,United States,Brisbane,Consumer,8,409.0,2023-01-31,Bronze,No,Paid Search
+C10319,France,Berlin,Small Business,6,897.44,2023-08-12,Gold,No,Social
+C10320,United States,Austin,Consumer,5,146.25,2022-05-12,Silver,Yes,Social
+C10321,United States,Chicago,Small Business,6,226.9,2023-02-11,Bronze,No,Social
+C10322,United States,Seattle,Small Business,3,133.0,2022-12-12,Bronze,No,Social
+C10323,Germany,Hamburg,Consumer,2,56.0,2023-11-28,Silver,Yes,Organic Search
+C10324,Germany,Berlin,Consumer,9,390.40999999999997,2023-10-08,Silver,No,Referral
+C10325,United States,Austin,Consumer,6,296.95,2023-11-06,Silver,No,Organic Search
+C10326,United States,San Jose,Consumer,7,387.03,2023-12-14,Gold,Yes,Social
+C10327,Germany,Munich,Consumer,12,1176.1499999999999,2023-12-04,Silver,Yes,Email
+C10328,United Kingdom,Birmingham,Small Business,4,71.4,2022-07-26,Silver,No,Social
+C10329,Canada,Hamburg,Consumer,7,206.48000000000002,2022-10-28,Bronze,Yes,Email
+C10330,Australia,Hamburg,Consumer,3,128.15,2023-01-13,Bronze,Yes,Paid Search
+C10331,United States,Chicago,Consumer,4,248.9,2022-02-02,Silver,No,Social
+C10332,United States,Berlin,Consumer,6,570.76,2024-01-20,Silver,Yes,Organic Search
+C10333,United States,Brisbane,Consumer,5,375.2,2024-03-11,Silver,Yes,Organic Search
+C10334,Canada,Lyon,Consumer,4,109.35,2023-07-22,Bronze,Yes,Referral
+C10335,United States,New York,Consumer,12,547.1800000000001,2023-01-04,Silver,Yes,Paid Search
+C10336,United States, ,Consumer,9,546.9,2023-02-22,Gold,No,Organic Search
+C10337,United States,Chicago,Consumer,6,618.8,2024-03-30,Bronze,Yes,Social
+C10338,United Kingdom,Austin,Consumer,10,662.6800000000001,2022-01-05,Silver,Yes,Organic Search
+C10339,Canada,Berlin,Consumer,4,90.12,2023-03-13,Silver,Yes,Organic Search
+C10340,United States,San Jose,Consumer,6,237.7,2024-05-04,Silver,Yes,Email
+C10341,United Kingdom,Austin,Small Business,3,137.0,2022-12-18,Silver,Yes,Referral
+C10342,France,Brisbane,Consumer,10,651.18,2022-10-01,Silver,Yes,Paid Search
+C10343,France,Austin,Consumer,9,524.09,2024-01-10,Bronze,Yes,Organic Search
+C10344,United States,Chicago,Consumer,6,326.65,2023-01-09,Silver,No,Organic Search
+C10345,United Kingdom,London,Consumer,5,268.4,2023-11-07,Silver,Yes,Paid Search
+C10346,Canada,Montreal,Consumer,8,541.15,2023-08-02,Silver,Yes,Paid Search
+C10347,Canada,Chicago,Consumer,7,543.9200000000001,2022-08-06,Bronze,No,Email
+C10349,United States,Seattle,Consumer,7,239.55,2022-02-13,Silver,No,Organic Search
+C10350,Germany,Chicago,Consumer,8,578.95,2022-04-12,Bronze,No,Organic Search
+C10351,Australia,Chicago,Consumer,5,308.78,2023-08-20,Bronze,No,Email
+C10352,United States,Lyon,Consumer,5,189.4,2023-02-04,Silver,No,Referral
+C10353,Germany,Berlin,Consumer,5,149.35,2022-01-17,Gold,Yes,Social
+C10354,United Kingdom,Austin,Consumer,8,404.7,2023-01-25,Gold,Yes,Paid Search
+C10355,Canada,Berlin,Consumer,6,255.4,2023-07-11,Silver,Yes,Social
+C10356,United States,San Jose,Consumer,7,681.0,2022-06-14,Gold,Yes,Social
+C10357,United States,San Jose,Consumer,7,316.25,2022-04-24,Silver,Yes,Social
+C10358,France,Lyon,Consumer,6,395.38,2023-02-02,Bronze,No,Referral
+C10359,United Kingdom,London,Consumer,7,228.05,2024-03-27,Gold,Yes,Social
+C10360,United States,San Jose,Consumer,11,1000.05,2023-12-25,Bronze,No,Social
+C10361,Australia,Brisbane,Consumer,3,97.0,2024-04-12,Silver,Yes,Social
+C10362,United States,Austin,Consumer,6,218.98,2024-05-05,Bronze,No,Organic Search
+C10363,United States,Seattle,Consumer,6,257.1,2022-05-05,Bronze,No,Organic Search
+C10364,United States,Chicago,Consumer,9,601.85,2023-07-11,Silver,No,Paid Search
+C10365,United States,San Jose,Consumer,11,338.56,2022-03-15,Silver,Yes,Organic Search
+C10366,United States,Austin,Consumer,5,300.68,2023-02-20,Gold,Yes,Paid Search
+C10367,United States,Seattle,Consumer,4,209.72,2023-10-26,Bronze,Yes,Referral
+C10368,United States,Austin,Consumer,7,602.35,2023-02-20,Bronze,No,Paid Search
+C10369,United States,Austin,Consumer,8,723.13,2023-03-22,Bronze,No,Organic Search
+C10370,United States,Austin,Consumer,5,243.0,2022-04-27,Bronze,Yes,Paid Search
+C10371,Canada,Austin,Small Business,5,264.53999999999996,2022-02-20,Bronze,No,Social
+C10372,Germany,Berlin,Consumer,11,941.35,2024-01-28,Bronze,No,Paid Search
+C10373,United States,New York,Consumer,7,404.25,2022-02-03,Silver,No,Organic Search
+C10374,Australia,Marseille,Consumer,8,344.0,2022-08-06,Bronze,No,Referral
+C10375,United States,Seattle,Consumer,10,607.7,2023-06-20,Bronze,No,Organic Search
+C10376,United States,New York,Consumer,9,576.37,2023-09-09,Bronze,Yes,Organic Search
+C10377,United States,Austin,Consumer,6,180.8,2024-01-02,Silver,Yes,Email
+C10378,United Kingdom,Birmingham,Consumer,6,552.6,2022-09-14,Bronze,Yes,Email
+C10379,United States,Austin,Consumer,2,105.6,2022-11-03,Bronze,Yes,Organic Search
+C10380,United States,San Jose,Consumer,5,419.82,2024-03-26,Bronze,No,Social
+C10381,United States,Seattle,Consumer,11,699.6,2023-03-24,Bronze,Yes,Paid Search
+C10382,United States,New York,Consumer,7,615.6,2024-03-05,Silver,Yes,Organic Search
+C10383,United States,Chicago,Consumer,4,222.2,2022-10-22,Silver,Yes,Email
+C10384,United States,San Jose,Consumer,8,264.7,2024-02-06,Silver,No,Organic Search
+C10385,United States,Seattle,Consumer,6,230.62,2024-05-08,Bronze,Yes,Referral
+C10386,Canada,Berlin,Consumer,4,129.98,2022-11-30,Silver,Yes,Referral
+C10387,United States,Chicago,Consumer,6,313.8,2023-06-27,Silver,No,Social
+C10388,Canada,Vancouver,Consumer,9,528.58,2022-05-08,Silver,No,Social
+C10389,United States,Berlin,Consumer,12,886.23,2024-02-22,Gold,Yes,Email
+C10390,France,Paris,Consumer,7,359.5,2023-08-14,Gold,Yes,Organic Search
+C10391,United States,Seattle,Consumer,7,296.5,2023-04-07,Gold,Yes,Referral
+C10392,United States,Seattle,Consumer,11,599.24,2023-12-11,Gold,Yes,Paid Search
+C10393,Australia,London,Corporate,2,170.0,2023-12-29,Bronze,No,Referral
+C10394,Canada,Marseille,Consumer,12,914.87,2022-05-23,Silver,Yes,Referral
+C10395,United States,Seattle,Small Business,9,791.52,2023-07-29,Silver,No,Referral
+C10396,Canada,Manchester,Consumer,2,59.8,2022-12-20,Silver,No,Social
+C10397,United States,Austin,Consumer,7,415.6,2023-06-12,Bronze,Yes,Referral
+C10398,United Kingdom,Manchester,Small Business,10,553.35,2023-08-03,Silver,Yes,Organic Search
+C10399,United Kingdom,London,Consumer,8,691.45,2022-10-11,Bronze,No,Email
+C10400,United States,Austin,Consumer,6,272.4,2022-04-24,Bronze,Yes,Email
+C10401,Australia,Hamburg,Consumer,10,645.0,2023-02-12,Gold,No,Organic Search
+C10402,United States,Seattle,Consumer,3,115.0,2023-11-22,Bronze,No,Email
+C10403,United States,San Jose,Consumer,6,220.25,2023-05-20,Silver,No,Referral
+C10404,United States,San Jose,Consumer,11,512.28,2022-02-19,Silver,Yes,Organic Search
+C10405,United States,Austin,Consumer,8,389.18,2023-03-21,Gold,No,Organic Search
+C10406,United States,Lyon,Consumer,18,1037.91,2023-06-24,Bronze,Yes,Paid Search
+C10407,United Kingdom,Manchester,Consumer,5,213.68,2024-04-24,Gold,Yes,Email
+C10408,France,Paris,Consumer,7,551.85,2022-05-06,Bronze,No,Referral
+C10409,Canada,Toronto,Consumer,7,259.95,2024-05-21,Bronze,No,Paid Search
+C10410,United Kingdom,London,Consumer,7,358.8,2024-02-09,Gold,No,Social
+C10411,United Kingdom,Austin,Consumer,10,517.95,2022-03-14,Bronze,No,Email
+C10412,United States,Austin,Consumer,11,449.81,2022-08-28,Gold,Yes,Paid Search
+C10413,Germany,Chicago,Consumer,4,609.5,2022-11-15,Bronze,Yes,Email
+C10414,United States,Vancouver,Consumer,6,349.03000000000003,2022-09-23,Silver,Yes,Email
+C10415,United States,Chicago,Consumer,9,566.3,2022-02-14,Bronze,Yes,Email
+C10416,Canada,Berlin,Consumer,8,550.08,2023-03-20,Silver,No,Paid Search
+C10417,United States,Chicago,Consumer,10,487.4,2023-07-13,Bronze,No,Referral
+C10418,United States,New York,Consumer,7,436.8,2023-09-17,Gold,Yes,Paid Search
+C10419,United Kingdom,Birmingham,Consumer,3,85.8,2022-08-04,Bronze,No,Organic Search
+C10420,United States,New York,Consumer,6,240.43,2022-12-31,Silver,Yes,Social
+C10421,Canada,Birmingham,Consumer,7,708.65,2023-12-19,Silver,No,Paid Search
+C10422,United States,Chicago,Consumer,6,489.4,2024-06-01,Bronze,Yes,Social
+C10423,United States,New York,Consumer,10,531.1,2022-01-26,Silver,Yes,Referral
+C10424,Canada,Birmingham,Consumer,10,872.15,2022-03-12,Silver,No,Email
+C10425,United States,Brisbane,Consumer,3,166.5,2022-07-18,Gold,No,Paid Search
+C10426,United States,Seattle,Consumer,17,1078.7,2023-09-01,Silver,No,Paid Search
+C10427,Canada,Austin,Consumer,7,436.0,2023-09-02,Bronze,No,Social
+C10428,France,Birmingham,Consumer,4,161.5,2023-08-27,Bronze,No,Organic Search
+C10429,United Kingdom,Chicago,Consumer,10,630.28,2024-02-13,Silver,Yes,Organic Search
+C10430,Canada,Austin,Consumer,4,191.0,2022-03-07,Gold,No,Paid Search
+C10431,United States,Manchester,Consumer,6,660.05,2023-05-24,Bronze,Yes,Organic Search
+C10432,France,Berlin,Consumer,7,377.1,2023-11-28,Bronze,Yes,Social
+C10433,Canada,Manchester,Consumer,2,105.0,2023-11-30,Silver,No,Organic Search
+C10434,United States,Berlin,Small Business,6,293.25,2023-10-09,Gold,No,Social
+C10435,United Kingdom,Birmingham,Consumer,5,365.99,2022-10-04,Bronze,No,Organic Search
+C10436,Germany,Berlin,Consumer,3,139.5,2022-11-04,Silver,No,Organic Search
+C10437,Canada, ,Consumer,7,601.23,2022-07-27,Silver,No,Email
+C10438,United States,Austin,Consumer,7,330.32,2024-01-07,Bronze,No,Social
+C10439,United States,Seattle,Consumer,14,734.25,2024-03-11,Silver,Yes,Social
+C10440,Australia,Chicago,Consumer,3,177.35,2023-11-16,Silver,Yes,Paid Search
+C10441,United States,Berlin,Consumer,4,195.0,2022-09-11,Gold,Yes,Organic Search
+C10442,United States,Austin,Consumer,8,350.3,2023-07-20,Silver,No,Email
+C10443,United States,Seattle,Corporate,6,339.45,2023-05-28,Bronze,No,Email
+C10444,United States,Chicago,Consumer,8,535.25,2023-12-13,Gold,Yes,Social
+C10445,United States,Austin,Consumer,7,406.1,2023-07-17,Silver,No,Organic Search
+C10446,United States,Austin,Consumer,7,689.1,2022-09-17,Gold,No,Organic Search
+C10447,United States,New York,Corporate,5,250.05,2023-01-27,Bronze,Yes,Social
+C10448,Canada,Seattle,Consumer,13,801.0,2023-06-13,Silver,Yes,Paid Search
+C10449,United States,San Jose,Consumer,9,350.0,2023-02-20,Bronze,No,Email
+C10450,United States,Berlin,Consumer,7,490.9,2022-04-08,Bronze,Yes,Paid Search
+C10451,United States,Manchester,Consumer,4,258.5,2023-04-03,Bronze,Yes,Paid Search
+C10452,United Kingdom,Manchester,Consumer,3,185.5,2022-12-12,Bronze,Yes,Organic Search
+C10453,United States,Austin,Consumer,4,109.5,2022-02-23,Gold,No,Social
+C10454,United States,Austin,Consumer,11,618.0,2022-02-03,Gold,Yes,Paid Search
+C10455,United States,Brisbane,Consumer,4,195.16,2022-12-08,Bronze,Yes,Email
+C10456,Australia,Brisbane,Consumer,8,414.1,2023-07-14,Gold,Yes,Social
+C10457,United States,Hamburg,Consumer,10,557.85,2022-02-11,Gold,No,Referral
+C10458,Australia,Austin,Consumer,9,304.57,2023-03-09,Gold,No,Email
+C10459,Canada,Munich,Consumer,6,248.95,2023-04-10,Silver,No,Paid Search
+C10460,France,Munich,Consumer,3,144.4,2024-04-11,Silver,Yes,Email
+C10461,Australia,Brisbane,Consumer,8,726.12,2022-11-30,Gold,No,Referral
+C10462,United States,San Jose,Consumer,9,485.25,2024-05-07,Bronze,Yes,Paid Search
+C10463,United Kingdom,Berlin,Small Business,11,357.43,2022-11-21,Bronze,Yes,Paid Search
+C10464,United States,Birmingham,Small Business,8,393.8,2024-03-12,Bronze,No,Organic Search
+C10465,United States,New York,Consumer,6,401.65,2022-11-17,Bronze,No,Referral
+C10466,United Kingdom,Birmingham,Consumer,9,343.52,2022-06-29,Silver,Yes,Social
+C10467,Canada,Manchester,Consumer,6,322.18,2023-03-09,Bronze,Yes,Email
+C10468,Canada,Vancouver,Consumer,14,757.4,2022-11-21,Gold,Yes,Paid Search
+C10469,United States,Birmingham,Consumer,4,77.49000000000001,2022-03-05,Silver,Yes,Organic Search
+C10470,Canada,Montreal,Consumer,6,445.3,2023-07-09,Silver,Yes,Social
+C10471,United States,Chicago,Small Business,9,260.5,2023-02-28,Gold,Yes,Social
+C10472,United Kingdom,Manchester,Consumer,7,336.0,2023-07-26,Bronze,No,Social
+C10473,United States,Lyon,Consumer,8,540.95,2022-04-04,Silver,Yes,Paid Search
+C10474,United States,Manchester,Consumer,8,658.38,2023-06-01,Silver,Yes,Organic Search
+C10475,France,Austin,Consumer,2,59.0,2024-05-21,Silver,No,Referral
+C10476,United States,Manchester,Consumer,9,522.2,2022-10-07,Gold,No,Organic Search
+C10477,United States,Chicago,Small Business,4,240.0,2023-12-09,Gold,No,Referral
+C10478,Germany,Munich,Consumer,11,488.6,2023-04-19,Silver,Yes,Organic Search
+C10479,United States,Seattle,Consumer,8,723.3499999999999,2022-06-03,Silver,No,Organic Search
+C10480,United States,Seattle,Consumer,6,305.25,2022-05-12,Gold,No,Organic Search
+C10481,United States,Brisbane,Consumer,4,256.2,2023-11-13,Bronze,No,Referral
+C10482,United Kingdom,Austin,Consumer,7,283.42,2022-11-25,Bronze,Yes,Paid Search
+C10483,Germany,Berlin,Consumer,4,186.5,2023-03-08,Bronze,No,Referral
+C10484,United Kingdom,Birmingham,Consumer,8,433.0,2023-05-02,Bronze,Yes,Organic Search
+C10485,United States,London,Consumer,9,336.51,2022-05-19,Silver,No,Paid Search
+C10486,United States,Austin,Consumer,8,428.9,2024-02-18,Bronze,No,Organic Search
+C10487,United States,Chicago,Consumer,4,288.77,2023-05-24,Gold,Yes,Referral
+C10488,United States,Chicago,Consumer,9,698.37,2024-03-01,Gold,No,Organic Search
+C10489,Germany,Berlin,Consumer,9,492.8,2023-03-01,Silver,Yes,Organic Search
+C10490,France,Lyon,Consumer,8,416.7,2022-05-28,Gold,Yes,Social
+C10491,Germany,Berlin,Consumer,6,231.34,2023-05-01,Silver,Yes,Email
+C10492,United Kingdom,Austin,Small Business,6,178.67,2022-01-08,Silver,No,Organic Search
+C10493,Australia,Brisbane,Consumer,5,386.7,2023-01-03,Silver,Yes,Paid Search
+C10494,United States,San Jose,Consumer,6,338.0,2024-03-17,Gold,Yes,Organic Search
+C10495,United States,Seattle,Consumer,7,381.9,2024-04-03,Gold,No,Organic Search
+C10496,France,Chicago,Small Business,5,243.3,2023-02-27,Gold,Yes,Email
+C10497,United States,Vancouver,Consumer,9,776.47,2023-02-14,Gold,Yes,Paid Search
+C10498,United States,Paris,Consumer,4,52.84,2022-06-05,Gold,Yes,Paid Search
+C10499,Germany,Austin,Consumer,10,509.07,2023-06-20,Bronze,Yes,Email
+C10500,United Kingdom,Austin,Consumer,6,265.8,2022-03-30,Gold,No,Paid Search
+C10501,United States,Berlin,Consumer,5,271.18,2024-01-03,Gold,Yes,Organic Search
+C10502,Germany,Birmingham,Consumer,8,565.65,2022-04-05,Gold,No,Organic Search
+C10503,Canada,Chicago,Consumer,3,134.0,2023-12-29,Gold,No,Paid Search
+C10504,United States,Chicago,Consumer,11,582.0,2022-12-04,Silver,Yes,Paid Search
+C10505,France,Chicago,Consumer,5,178.1,2023-07-01,Bronze,No,Referral
+C10506,United States,Manchester,Consumer,16,966.59,2023-09-25,Bronze,No,Organic Search
+C10507,United States,Austin,Consumer,8,422.13,2022-12-18,Silver,Yes,Social
+C10508,United States,Berlin,Consumer,9,755.37,2023-09-28,Gold,No,Organic Search
+C10509,United Kingdom,Austin,Consumer,4,117.5,2023-03-17,Bronze,Yes,Organic Search
+C10510,United States,Manchester,Consumer,8,522.6,2024-01-24,Silver,No,Referral
+C10511,United Kingdom,San Jose,Consumer,8,626.0,2022-04-03,Bronze,No,Referral
+C10512,United States,Austin,Consumer,8,296.5,2022-06-14,Gold,Yes,Referral
+C10513,United States,New York,Consumer,3,165.5,2024-03-24,Bronze,No,Paid Search
+C10514,United States,Birmingham,Consumer,4,-11.0,2024-01-05,Gold,Yes,Paid Search
+C10515,United States,Austin,Consumer,8,446.04999999999995,2023-08-09,Bronze,Yes,Paid Search
+C10516,Germany,Berlin,Consumer,5,260.19,2022-05-12,Bronze,No,Referral
+C10517,Germany,Berlin,Consumer,6,562.22,2022-04-08,Bronze,No,Social
+C10518,Germany,Berlin,Consumer,6,297.0,2022-07-27,Bronze,Yes,Organic Search
+C10519,United States,Austin,Consumer,9,882.85,2023-11-23,Bronze,Yes,Organic Search
+C10520,Canada,Manchester,Consumer,9,642.6500000000001,2022-03-13,Bronze,Yes,Organic Search
+C10521,Canada,London,Consumer,3,182.4,2022-10-17,Gold,Yes,Referral
+C10522,United Kingdom,London,Consumer,7,803.98,2024-04-05,Bronze,Yes,Paid Search
+C10523,Germany,Berlin,Small Business,1,42.0,2023-10-30,Bronze,No,Organic Search
+C10524,Canada,Berlin,Consumer,6,480.35,2023-04-26,Bronze,No,Email
+C10525,United States,Chicago,Consumer,7,231.57,2023-05-02,Gold,Yes,Social
+C10526,United States,Toronto,Consumer,9,477.38,2023-02-03,Silver,Yes,Social
+C10527,United States,Brisbane,Consumer,6,275.35,2023-05-25,Gold,No,Organic Search
+C10528,Australia,Munich,Small Business,5,318.85,2023-07-16,Silver,Yes,Email
+C10529,United Kingdom,Birmingham,Consumer,5,266.0,2022-03-18,Gold,No,Referral
+C10530,United States,San Jose,Consumer,6,174.45,2024-02-01,Bronze,Yes,Referral
+C10531,Canada,Vancouver,Consumer,4,110.8,2024-03-17,Silver,No,Referral
+C10532,Australia,Brisbane,Consumer,4,249.0,2023-06-05,Silver,Yes,Organic Search
+C10533,France,Marseille,Small Business,8,510.5,2023-11-11,Bronze,No,Paid Search
+C10534,United States,San Jose,Consumer,8,501.6,2022-03-29,Bronze,No,Email
+C10535,United States,New York,Consumer,6,290.5,2022-05-23,Silver,No,Referral
+C10536,Germany,Hamburg,Consumer,8,270.0,2023-06-15,Silver,No,Social
+C10537,United States,Chicago,Consumer,9,624.62,2023-10-23,Bronze,No,Referral
+C10538,France,Lyon,Consumer,6,290.92,2024-05-08,Bronze,No,Paid Search
+C10539,United States,Austin,Consumer,5,285.28,2022-04-03,Bronze,Yes,Email
+C10540,United States,Berlin,Consumer,10,685.87,2023-09-27,Silver,No,Organic Search
+C10541,United States,New York,Consumer,10,424.98,2023-06-25,Silver,No,Email
+C10542,Germany,Munich,Small Business,5,245.38,2024-04-13,Bronze,Yes,Organic Search
+C10543,Canada,Chicago,Consumer,12,1038.4,2023-08-26,Silver,Yes,Email
+C10544,France,Marseille,Consumer,12,1223.78,2023-06-18,Silver,Yes,Email
+C10545,France,Chicago,Consumer,6,289.0,2023-06-19,Silver,Yes,Paid Search
+C10546,United States,Austin,Consumer,5,348.0,2022-10-22,Bronze,Yes,Organic Search
+C10547,United Kingdom,Birmingham,Consumer,10,745.9,2023-12-03,Silver,No,Organic Search
+C10548,United Kingdom,Manchester,Consumer,8,287.68,2022-03-02,Bronze,No,Paid Search
+C10549,Australia,Lyon,Consumer,3,180.0,2022-07-10,Silver,No,Email
+C10550,Canada,Seattle,Consumer,7,409.15,2024-02-01,Gold,Yes,Paid Search
+C10551,United States,Austin,Consumer,9,397.9,2024-04-06,Bronze,Yes,Referral
+C10552,United States,New York,Consumer,8,234.6,2024-05-15,Bronze,Yes,Social
+C10553,United States,New York,Small Business,8,414.35,2023-02-25,Silver,Yes,Paid Search
+C10554,France,Paris,Consumer,5,258.15,2022-08-23,Gold,No,Social
+C10555,United Kingdom,Manchester,Consumer,7,333.35,2022-10-18,Silver,Yes,Organic Search
+C10556,Canada,Seattle,Consumer,2,47.05,2022-06-02,Bronze,No,Referral
+C10557,United States,Austin,Consumer,5,264.0,2022-10-04,Silver,No,Paid Search
+C10558,Canada,Vancouver,Consumer,10,220.6,2023-01-03,Bronze,No,Organic Search
+C10559,United Kingdom,Seattle,Consumer,10,839.9499999999999,2023-03-14,Bronze,No,Social
+C10560,United States,Austin,Consumer,9,843.5600000000001,2022-02-10,Silver,Yes,Paid Search
+C10561,Australia,Montreal,Consumer,8,739.4,2024-01-27,Bronze,Yes,Social
+C10562,United States,Seattle,Consumer,5,331.4,2022-10-14,Silver,Yes,Social
+C10563,Germany,Brisbane,Consumer,4,373.83,2024-02-04,Bronze,No,Paid Search
+C10564,Australia,Manchester,Consumer,5,226.4,2023-06-07,Silver,Yes,Referral
+C10565,United Kingdom,Brisbane,Consumer,4,129.5,2022-04-25,Bronze,Yes,Organic Search
+C10566,United States,Austin,Consumer,8,756.59,2022-11-21,Bronze,Yes,Email
+C10567,Canada,Vancouver,Consumer,1,42.0,2022-06-13,Silver,Yes,Social
+C10568,United States,San Jose,Consumer,10,1000.1,2023-07-26,Silver,No,Organic Search
+C10569,United States,Berlin,Consumer,8,700.45,2023-06-24,Bronze,Yes,Referral
+C10570,Germany,Berlin,Consumer,8,511.6,2023-03-10,Gold,No,Email
+C10571,United States,Chicago,Consumer,13,718.29,2023-02-22,Bronze,No,Paid Search
+C10572,United States,Birmingham,Consumer,10,456.62,2023-07-13,Bronze,Yes,Organic Search
+C10573,United Kingdom,London,Consumer,4,104.58,2023-12-26,Silver,No,Paid Search
+C10574,Australia,Birmingham,Consumer,5,183.02,2022-02-22,Silver,No,Paid Search
+C10575,United States,Manchester,Small Business,8,259.6,2022-11-07,Silver,No,Organic Search
+C10576,United States,New York,Consumer,12,553.37,2023-04-18,Silver,Yes,Organic Search
+C10577,United Kingdom,Birmingham,Consumer,4,114.35,2023-06-23,Gold,Yes,Paid Search
+C10578,United States,London,Consumer,7,434.1,2023-10-10,Bronze,Yes,Referral
+C10579,United Kingdom,London,Small Business,8,820.94,2022-01-31,Bronze,Yes,Paid Search
+C10580,Australia,Brisbane,Consumer,6,816.4,2023-02-13,Silver,No,Social
+C10581,United Kingdom,Manchester,Small Business,9,442.5,2022-01-18,Silver,Yes,Referral
+C10582,United States,San Jose,Small Business,10,476.7,2022-08-15,Gold,Yes,Organic Search
+C10583,Canada,Austin,Consumer,4,159.98,2022-12-07,Bronze,No,Email
+C10584,United States,Birmingham,Consumer,4,320.5,2023-07-14,Gold,Yes,Referral
+C10585,United States,Berlin,Consumer,9,369.8,2022-02-25,Silver,No,Email
+C10586,United Kingdom,Manchester,Consumer,9,429.3,2024-05-09,Gold,Yes,Paid Search
+C10587,United States,Birmingham,Consumer,10,775.74,2022-09-22,Silver,Yes,Organic Search
+C10588,France,Marseille,Consumer,8,739.7,2022-05-31,Bronze,Yes,Email
+C10589,United States,Austin,Consumer,6,436.83,2023-09-20,Silver,No,Referral
+C10590,United States,Montreal,Consumer,11,621.44,2023-12-06,Gold,No,Organic Search
+C10591,United States,San Jose,Consumer,6,273.0,2022-12-07,Gold,Yes,Paid Search
+C10592,Australia,Birmingham,Consumer,4,510.0,2024-05-02,Bronze,Yes,Organic Search
+C10593,United Kingdom,Manchester,Consumer,8,559.3,2023-01-20,Bronze,Yes,Paid Search
+C10594,United States,Austin,Consumer,4,150.2,2022-03-19,Silver,No,Referral
+C10595,United States,Chicago,Consumer,10,757.32,2022-12-03,Silver,Yes,Social
+C10596,United Kingdom,London,Consumer,9,779.2,2023-12-21,Silver,Yes,Email
+C10597,Australia,Brisbane,Consumer,8,319.78,2023-04-02,Silver,No,Referral
+C10598,France,Lyon,Consumer,12,964.78,2023-12-28,Bronze,No,Organic Search
+C10599,Australia,Austin,Consumer,4,210.7,2022-03-07,Bronze,Yes,Social
+C10600,Canada,Vancouver,Consumer,14,732.62,2022-09-02,Gold,No,Social
+C10601,Australia,Chicago,Consumer,4,160.91,2022-03-10,Bronze,Yes,Organic Search
+C10602,United States,Seattle,Consumer,13,868.9,2023-06-05,Gold,No,Email
+C10603,United States,London,Consumer,12,617.42,2024-02-29,Silver,No,Email
+C10604,Canada,Birmingham,Consumer,7,247.5,2023-05-31,Silver,Yes,Social
+C10605,United States,Paris,Consumer,3,137.28,2023-12-06,Bronze,Yes,Social
+C10606,Australia,Melbourne,Consumer,10,421.45,2024-01-08,Silver,Yes,Paid Search
+C10607,United States,Munich,Consumer,13,574.21,2022-08-06,Silver,Yes,Organic Search
+C10608,Canada,Berlin,Consumer,8,402.95,2023-04-30,Bronze,No,Paid Search
+C10609,United Kingdom,Brisbane,Consumer,5,202.88,2022-01-13,Silver,Yes,Referral
+C10610,United Kingdom,London,Consumer,5,186.5,2022-09-30,Bronze,Yes,Email
+C10611,Australia,Austin,Consumer,4,87.87,2023-04-28,Gold,No,Social
+C10612,United Kingdom,London,Consumer,3,136.7,2023-10-20,Silver,No,Organic Search
+C10613,United States,San Jose,Consumer,6,283.38,2022-06-17,Gold,No,Referral
+C10614,United States,Manchester,Consumer,6,557.33,2024-02-12,Silver,No,Organic Search
+C10615,United States,Chicago,Consumer,13,706.85,2022-04-24,Gold,Yes,Paid Search
+C10616,United States,Seattle,Consumer,11,948.5,2022-09-04,Bronze,Yes,Social
+C10617,United States,Birmingham,Consumer,5,240.4,2023-02-01,Silver,No,Organic Search
+C10618,United States,San Jose,Consumer,1,13.0,2022-08-30,Bronze,Yes,Social
+C10619,United States,Chicago,Consumer,10,532.0,2022-07-08,Silver,No,Organic Search
+C10620,United States,Chicago,Consumer,7,497.2,2022-11-04,Silver,Yes,Referral
+C10621,Australia,Brisbane,Consumer,6,198.3,2022-05-12,Silver,No,Organic Search
+C10622,Germany,Birmingham,Consumer,6,138.5,2022-08-03,Silver,Yes,Email
+C10623,United States,Chicago,Consumer,8,633.0,2023-10-26,Gold,Yes,Email
+C10624,United States,Seattle,Consumer,18,1752.32,2023-06-13,Bronze,Yes,Referral
+C10625,Canada,Vancouver,Consumer,5,427.5,2023-05-02,Bronze,Yes,Organic Search
+C10626,United Kingdom,Austin,Small Business,7,603.4,2023-07-14,Gold,Yes,Organic Search
+C10627,United Kingdom,Austin,Consumer,5,289.2,2024-04-21,Silver,Yes,Organic Search
+C10628,Canada,Toronto,Consumer,7,454.25,2024-04-10,Bronze,No,Email
+C10629,United States,Chicago,Consumer,5,179.48000000000002,2022-07-26,Bronze,Yes,Organic Search
+C10630,United Kingdom,Birmingham,Consumer,4,197.26999999999998,2023-08-17,Gold,Yes,Referral
+C10631,Germany,Berlin,Consumer,4,212.65,2022-05-23,Gold,Yes,Paid Search
+C10632,United States,Austin,Consumer,5,251.38,2023-10-19,Silver,Yes,Paid Search
+C10633,United Kingdom,Austin,Consumer,6,467.0,2023-03-25,Silver,Yes,Email
+C10634,France,Brisbane,Consumer,9,468.44,2024-02-01,Bronze,No,Email
+C10635,France,Chicago,Consumer,5,258.15,2022-11-21,Gold,No,Social
+C10636,United Kingdom,Chicago,Consumer,5,220.0,2023-02-24,Silver,No,Social
+C10637,Germany,Berlin,Corporate,2,42.0,2023-01-23,Silver,Yes,Organic Search
+C10638,United States,Vancouver,Small Business,6,292.68,2023-12-31,Silver,Yes,Organic Search
+C10639,Germany,Berlin,Consumer,3,150.7,2024-02-10,Bronze,Yes,Paid Search
+C10640,United States,New York,Consumer,4,193.6,2023-01-17,Gold,Yes,Email
+C10641,United Kingdom,Manchester,Consumer,6,560.1,2023-01-15,Bronze,No,Social
+C10642,France,Berlin,Consumer,2,184.0,2022-12-19,Gold,Yes,Organic Search
+C10643,United States,New York,Consumer,5,304.9,2023-03-15,Silver,No,Organic Search
+C10644,United States, ,Consumer,6,254.5,2022-11-27,Bronze,Yes,Organic Search
+C10645,United States,San Jose,Consumer,8,269.38,2023-03-11,Silver,Yes,Paid Search
+C10646,Germany,Berlin,Consumer,8,642.1,2023-08-04,Bronze,Yes,Social
+C10647,United States,San Jose,Consumer,6,424.5,2024-05-04,Silver,Yes,Email
+C10648,United States,Austin,Consumer,8,490.2,2023-09-02,Gold,Yes,Paid Search
+C10649,Australia,Austin,Consumer,7,302.5,2022-03-10,Bronze,Yes,Organic Search

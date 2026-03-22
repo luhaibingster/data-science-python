@@ -1,0 +1,21 @@
+sku_name,category,typical_unit_price,product_id,supplier,launch_year,margin_band
+Biscotti Jar,Bakery,11.5,P1000,Maple Bridge,2022,High
+Burr Grinder,Equipment,79.0,P1001,BlueRiver Imports,2023,Medium
+Ceramic Mug,Merch,14.0,P1002,Summit Trading,2023,Medium
+Cold Brew Pack,Coffee,14.0,P1003,NorthPeak Supply,2024,Medium
+Colombian Beans,Coffee,16.5,P1004,Summit Trading,2023,High
+Cookie Pack,Bakery,9.0,P1005,NorthPeak Supply,2023,Medium
+Croissant Box,Bakery,15.0,P1006,NorthPeak Supply,2023,High
+Earl Grey,Tea,11.0,P1007,Maple Bridge,2023,Medium
+Espresso Blend,Coffee,17.5,P1008,BlueRiver Imports,2022,Low
+Ethiopian Beans,Coffee,18.0,P1009,Summit Trading,2024,High
+French Press,Equipment,28.0,P1010,Aurora Goods,2023,Medium
+Green Tea,Tea,12.0,P1011,BlueRiver Imports,2022,Low
+Herbal Tea,Tea,10.0,P1012,NorthPeak Supply,2021,Medium
+Matcha Tin,Tea,19.0,P1013,BlueRiver Imports,2024,Low
+Milk Frother,Equipment,24.0,P1014,BlueRiver Imports,2024,Medium
+Muffin Box,Bakery,13.0,P1015,BlueRiver Imports,2022,High
+Pour Over Kit,Equipment,34.0,P1016,Summit Trading,2021,High
+T-Shirt,Merch,26.0,P1017,BlueRiver Imports,2021,Medium
+Tote Bag,Merch,18.0,P1018,Aurora Goods,2023,Medium
+Travel Mug,Merch,22.0,P1019,Aurora Goods,2022,Low
