@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AIConform 中文产品手册</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #071a33;
+    --navy-2: #0b2345;
+    --blue: #1455A4;
+    --sky: #2E8FE8;
+    --cyan: #00C4D4;
+    --gold: #c9a96b;
+    --ink: #102033;
+    --muted: #5e6b7b;
+    --line: #dfe6ef;
+    --soft: #f4f7fb;
+    --soft-2: #eef3f9;
+    --card: #ffffff;
+    --success: #22C55E;
+    --warn: #F59E0B;
+    --danger: #EF4444;
+    --purple: #7C3AED;
+    --teal: #0F9B8E;
+    --shadow: 0 18px 45px rgba(7, 26, 51, 0.10);
+    --font-zh: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+    --font-en: "Inter", sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #dfe7f0; }
+  body { font-family: var(--font-zh); color: var(--ink); line-height: 1.55; }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid #d9e2ec;
+    padding: 10px 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-en);
+  }
+  .toolbar .brand { font-weight: 800; color: var(--navy); letter-spacing: -0.02em; }
+  .toolbar .brand span { color: var(--sky); }
+  .toolbar .hint { color: var(--muted); font-size: 13px; }
+  .toolbar button {
+    border: none; background: var(--blue); color: #fff; border-radius: 999px;
+    padding: 10px 18px; font-weight: 700; cursor: pointer; font-family: var(--font-zh);
+    box-shadow: 0 8px 18px rgba(20,85,164,0.18);
+  }
+
+  .brochure { padding: 24px 0 48px; }
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto 22px;
+    background: white;
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+    break-after: page;
+  }
+  .page:last-child { page-break-after: auto; break-after: auto; }
+  .page-inner {
+    min-height: 297mm;
+    padding: 24mm 24mm 24mm 24mm;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .page-tight .page-inner {
+    padding: 18mm 18mm 18mm;
+  }
+  .page-tight .page-head {
+    margin-bottom: 6mm;
+  }
+  .page-tight .hero-stat-band {
+    margin-top: 6mm;
+    padding: 11px 12px;
+  }
+  .page-tight .grid-2 {
+    gap: 10px;
+    margin-top: 8mm;
+  }
+  .page-tight .panel {
+    padding: 12px 12px 14px;
+  }
+  .page-tight .panel-title {
+    margin-bottom: 6px;
+  }
+  .page-tight .bullet-list {
+    gap: 6px;
+  }
+  .page-tight .page-no {
+    bottom: 10mm;
+  }
+
+  .cover {
+    background:
+      radial-gradient(circle at 86% 22%, rgba(0,196,212,0.16), transparent 22%),
+      radial-gradient(circle at 18% 82%, rgba(46,143,232,0.12), transparent 24%),
+      linear-gradient(135deg, #061528 0%, #09203d 58%, #0b2c56 100%);
+    color: #fff;
+  }
+  .cover::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 22px 22px;
+    opacity: .45;
+  }
+  .cover .page-inner { position: relative; z-index: 1; }
+
+  .topbar {
+    display: flex; justify-content: space-between; align-items: center; margin-bottom: 18mm;
+    font-family: var(--font-en); font-size: 12px; letter-spacing: .08em; text-transform: uppercase;
+  }
+  .topbar .logo { font-size: 21px; font-weight: 800; letter-spacing: -0.03em; text-transform: none; }
+  .topbar .logo span { color: var(--cyan); }
+  .muted-light { color: rgba(255,255,255,.68); }
+
+  .eyebrow {
+    font-family: var(--font-en); font-size: 11px; font-weight: 700;
+    letter-spacing: .16em; text-transform: uppercase; color: var(--gold);
+    margin-bottom: 8px;
+  }
+  .eyebrow.light { color: rgba(255,255,255,.72); }
+  h1, h2, h3, h4, p { margin: 0; }
+  .cover-title {
+    font-size: 39px; font-weight: 800; line-height: 1.16; max-width: 110mm; margin-bottom: 10px;
+  }
+  .cover-title em { font-style: normal; color: #d9c39a; font-weight: 500; }
+  .cover-sub {
+    max-width: 118mm; font-size: 14.5px; color: rgba(255,255,255,.78); line-height: 1.8; margin-bottom: 14mm;
+  }
+  .pill-row { display: flex; flex-wrap: wrap; gap: 10px; max-width: 152mm; margin-bottom: 14mm; }
+  .pill {
+    padding: 8px 14px; border-radius: 999px; font-size: 12px; font-weight: 600;
+    color: rgba(255,255,255,.88); border: 1px solid rgba(255,255,255,.16); background: rgba(255,255,255,.06);
+  }
+  .metric-row {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin: 14mm auto 0;
+    justify-items: center;
+    align-items: stretch;
+    width: min(100%, 196mm);
+  }
+  .metric-card {
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: 14px;
+    padding: 20px 18px;
+    min-height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .metric-num { font-family: var(--font-en); font-size: 31px; font-weight: 800; color: #fff; margin-bottom: 10px; }
+  .metric-label { font-size: 14px; color: rgba(255,255,255,.78); line-height: 1.45; }
+  .footer-bar {
+    margin-top: 12mm; display: flex; justify-content: space-between; align-items: center;
+    font-size: 11px; color: rgba(255,255,255,.50);
+  }
+
+  .page-head {
+    display: flex; justify-content: space-between; align-items: center; margin-bottom: 9mm;
+    font-family: var(--font-en); font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: .11em;
+  }
+  .page-head .brand { font-weight: 800; color: var(--navy); text-transform: none; font-size: 17px; letter-spacing: -0.02em; }
+  .page-head .brand span { color: var(--sky); }
+  .section-title {
+    font-size: 29px; line-height: 1.22; color: var(--navy); margin-bottom: 10px; font-weight: 800;
+  }
+  .section-title em { font-style: normal; color: var(--gold); font-weight: 500; }
+  .section-sub { font-size: 14px; color: var(--muted); line-height: 1.8; max-width: 158mm; }
+
+  .hero-stat-band {
+    margin-top: 8mm; background: var(--navy); color: #fff; border-radius: 14px; padding: 15px 16px;
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;
+  }
+  .hero-stat-band .item { border-right: 1px solid rgba(255,255,255,.08); padding-right: 12px; }
+  .hero-stat-band .item:last-child { border-right: none; }
+  .hero-stat-band .num { font-family: var(--font-en); font-size: 27px; font-weight: 800; margin-bottom: 4px; color: #fff; }
+  .hero-stat-band .txt { font-size: 12px; color: rgba(255,255,255,.62); }
+
+  .grid-2 { display: grid; grid-template-columns: 1.07fr .93fr; gap: 18px; margin-top: 9mm; }
+  .panel {
+    background: white; border: 1px solid var(--line); border-radius: 14px; padding: 18px; box-shadow: 0 6px 18px rgba(16,32,51,0.04);
+  }
+  .panel.soft { background: linear-gradient(180deg, #f8fbff 0%, #f2f6fb 100%); }
+  .panel.dark {
+    background: linear-gradient(180deg, #0c1d31 0%, #0c223d 100%); color: #fff; border-color: #17345d;
+    box-shadow: none;
+  }
+  .panel-title { font-size: 16px; font-weight: 800; color: var(--navy); margin-bottom: 10px; }
+  .panel.dark .panel-title { color: #fff; }
+  .panel-desc { font-size: 13px; color: var(--muted); line-height: 1.72; }
+  .panel.dark .panel-desc { color: rgba(255,255,255,.64); }
+
+  .bullet-list { margin-top: 12px; display: grid; gap: 12px; }
+  .bullet { display: flex; gap: 12px; align-items: flex-start; }
+  .bullet .dot {
+    width: 20px; height: 20px; border-radius: 50%; flex: 0 0 20px; margin-top: 2px;
+    display: inline-flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700;
+    background: #dbeafe; color: var(--blue);
+  }
+  .bullet .text { font-size: 13px; color: var(--ink); line-height: 1.65; padding-top: 2px; }
+  .panel.dark .bullet .text { color: rgba(255,255,255,.82); }
+  .panel.dark .bullet .dot { background: rgba(0,196,212,.14); color: var(--cyan); }
+
+  .dashboard {
+    margin-top: 10mm; background: linear-gradient(180deg, #0b1d31 0%, #0f2745 100%);
+    border-radius: 16px; overflow: hidden; border: 1px solid #17345d;
+  }
+  .dash-head {
+    padding: 12px 16px; background: rgba(255,255,255,.03); border-bottom: 1px solid rgba(255,255,255,.07);
+    display: flex; align-items: center; gap: 12px; color: rgba(255,255,255,.5); font-family: var(--font-en); font-size: 12px;
+  }
+  .dots { display: flex; gap: 8px; }
+  .dots span { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+  .live { margin-left: auto; color: var(--success); font-weight: 700; }
+  .dash-body { padding: 15px; }
+  .kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 12px; }
+  .kpi {
+    background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.06); border-radius: 10px; padding: 13px;
+  }
+  .kpi-label { font-size: 10px; color: rgba(255,255,255,.38); text-transform: uppercase; letter-spacing: .08em; margin-bottom: 6px; font-family: var(--font-en); }
+  .kpi-value { font-family: var(--font-en); font-size: 23px; font-weight: 800; color: #fff; }
+  .kpi-note { font-size: 11px; color: rgba(255,255,255,.46); margin-top: 5px; }
+  .kpi-value.green { color: var(--success); }
+  .kpi-value.cyan { color: var(--cyan); }
+  .kpi-value.amber { color: var(--warn); }
+  .kpi-value.red { color: #ff6a6a; }
+
+  .dash-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 14px; }
+  .widget {
+    background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.06); border-radius: 10px; padding: 13px;
+  }
+  .widget-title {
+    font-size: 11px; color: rgba(255,255,255,.46); text-transform: uppercase; letter-spacing: .1em; margin-bottom: 10px; font-family: var(--font-en);
+  }
+  .prog-item { margin-bottom: 9px; }
+  .prog-top { display: flex; justify-content: space-between; font-size: 12px; color: rgba(255,255,255,.78); margin-bottom: 4px; }
+  .prog-bar { height: 6px; background: rgba(255,255,255,.08); border-radius: 999px; overflow: hidden; }
+  .prog-fill { height: 100%; border-radius: 999px; }
+
+  .heatmap { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; }
+  .heatmap div { aspect-ratio: 1; border-radius: 4px; }
+  .low { background: rgba(34,197,94,.36); }
+  .med { background: rgba(245,158,11,.54); }
+  .high { background: rgba(239,68,68,.56); }
+  .crit { background: rgba(239,68,68,.88); }
+  .none { background: rgba(255,255,255,.05); }
+  .legend { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 10px; }
+  .legend span { font-size: 10px; color: rgba(255,255,255,.48); display: inline-flex; gap: 6px; align-items: center; }
+  .legend i { width: 8px; height: 8px; border-radius: 2px; display: inline-block; }
+
+  .mini-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 12px; }
+  .mini-list { display: grid; gap: 10px; }
+  .mini-item { display: flex; justify-content: space-between; gap: 10px; font-size: 12px; color: rgba(255,255,255,.78); padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,.05); }
+  .mini-item:last-child { border-bottom: none; padding-bottom: 0; }
+  .sev { font-size: 10px; font-weight: 700; padding: 3px 8px; border-radius: 999px; }
+  .sev.red { background: rgba(239,68,68,.18); color: #ff8989; }
+  .sev.orange { background: rgba(249,115,22,.18); color: #ffb175; }
+  .sev.green { background: rgba(34,197,94,.18); color: #8ff0b2; }
+
+  .card-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 10mm; }
+  .card-grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 9mm; }
+  .info-card {
+    border: 1px solid var(--line); border-radius: 14px; padding: 16px; background: var(--card);
+  }
+  .info-card.soft { background: linear-gradient(180deg, #fbfdff 0%, #f4f8fc 100%); }
+  .icon-box {
+    width: 36px; height: 36px; border-radius: 10px; display: inline-flex; align-items: center; justify-content: center;
+    margin-bottom: 12px; font-size: 19px; background: #e8f0fb;
+  }
+  .info-title { font-size: 15px; font-weight: 800; color: var(--navy); margin-bottom: 8px; }
+  .info-text { font-size: 11.6px; color: var(--muted); line-height: 1.7; }
+  .tiny-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 12px; }
+  .tiny-tags span {
+    font-size: 9px; padding: 4px 8px; border-radius: 999px; background: #d0d9e6; color: var(--blue); font-family: var(--font-en); font-weight: 700;
+  }
+
+  .framework-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 9mm; }
+  .framework {
+    border: 1px solid var(--line); border-radius: 12px; padding: 13px; background: white; min-height: 84px;
+  }
+  .framework .label {
+    font-family: var(--font-en); font-size: 10px; font-weight: 800; letter-spacing: .08em; color: var(--blue); margin-bottom: 6px;
+  }
+  .framework .name { font-size: 14px; font-weight: 800; color: var(--navy); margin-bottom: 5px; }
+  .framework .desc { font-size: 10.5px; color: var(--muted); line-height: 1.55; }
+
+  .split-strong { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 9mm; }
+  .deep-card {
+    border-radius: 15px; padding: 16px; color: #fff;
+    background: linear-gradient(160deg, #081b34 0%, #0b2a53 100%);
+  }
+  .deep-card h3 { font-size: 19px; margin-bottom: 9px; }
+  .deep-card p { font-size: 13px; color: rgba(255,255,255,.72); line-height: 1.75; }
+  .deep-list { display: grid; gap: 12px; margin-top: 14px; }
+  .deep-list div { padding: 11px 12px; border-radius: 10px; background: rgba(255,255,255,.06); font-size: 11.3px; line-height: 1.6; }
+
+  .timeline {
+    display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-top: 11mm; align-items: start;
+  }
+  .step {
+    position: relative; padding-top: 6px;
+  }
+  .step::before {
+    content: ""; position: absolute; top: 18px; left: calc(50% + 18px); width: calc(100% - 16px); height: 2px; background: linear-gradient(90deg, #bfd2e8, #edf4fb);
+  }
+  .step:last-child::before { display: none; }
+  .step-num {
+    width: 38px; height: 38px; border-radius: 50%; background: var(--navy); color: #fff; display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-en); font-weight: 800; margin-bottom: 12px; position: relative; z-index: 1;
+  }
+  .step h4 { font-size: 14px; color: var(--navy); margin-bottom: 6px; }
+  .step p { font-size: 12px; color: var(--muted); line-height: 1.65; padding-right: 6px; }
+
+  .contact-panel {
+    margin-top: auto; background: linear-gradient(135deg, #081b34 0%, #0d2a51 100%); border-radius: 16px; color: #fff; padding: 20px;
+  }
+  .contact-title { font-size: 29px; font-weight: 800; margin-bottom: 10px; }
+  .contact-sub { font-size: 14px; color: rgba(255,255,255,.68); line-height: 1.75; max-width: 140mm; }
+  .contact-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 18px; margin-top: 14px; }
+  .contact-box {
+    background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.10); border-radius: 12px; padding: 16px;
+  }
+  .contact-box .hd { font-family: var(--font-en); font-size: 11px; color: rgba(255,255,255,.48); text-transform: uppercase; letter-spacing: .1em; margin-bottom: 8px; }
+  .contact-box .bd { font-size: 14px; color: #fff; line-height: 1.7; }
+  .cta {
+    display: inline-block; margin-top: 10px; padding: 9px 14px; border-radius: 999px; background: #d5b37a; color: #112235; text-decoration: none; font-weight: 800; font-size: 12px;
+  }
+  .fineprint {
+    margin-top: 10px; display: flex; justify-content: space-between; gap: 10px; font-size: 11px; color: rgba(255,255,255,.42);
+  }
+
+  .page-no {
+    position: absolute; right: 16mm; bottom: 8mm; font-family: var(--font-en); font-size: 11px; color: rgba(16,32,51,.42);
+  }
+  .cover .page-no { color: rgba(255,255,255,.42); }
+
+  @page { size: A4; margin: 0; }
+  @media print {
+    html, body { background: white; }
+    .toolbar { display: none !important; }
+    .brochure { padding: 0; }
+    .page { margin: 0; box-shadow: none; height: 297mm; overflow: visible; }
+    .page-inner { padding: 15mm 20mm; min-height: auto; }
+    .page-tight .page-inner { padding: 12mm 15mm; }
+    .page-no { position: absolute; right: 16mm; bottom: 8mm; }
+    .panel { page-break-inside: avoid; }
+    .metric-card { page-break-inside: avoid; }
+    .info-card { page-break-inside: avoid; }
+    .framework { page-break-inside: avoid; }
+    .deep-card { page-break-inside: avoid; }
+    .contact-panel { page-break-inside: avoid; }
+    .dashboard { page-break-inside: avoid; }
+    .timeline { page-break-inside: avoid; }
+    .split-strong { page-break-inside: avoid; }
+    .card-grid-3, .card-grid-4 { page-break-inside: avoid; }
+    .hero-stat-band { page-break-inside: avoid; }
+    .grid-2 { page-break-inside: avoid; }
+    .bullet-list { page-break-inside: avoid; }
+    .mini-grid { page-break-inside: avoid; }
+    .kpi-grid { page-break-inside: avoid; }
+    .dash-grid { page-break-inside: avoid; }
+    .legend { page-break-inside: avoid; }
+    .contact-grid { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="toolbar">
+  <div>
+    <div class="brand">AI<span>Conform</span></div>
+    <div class="hint">已针对打印 PDF 重新排版：固定 A4 页面、减少留白、统一卡片对齐</div>
+  </div>
+  <button onclick="window.print()">下载 / 打印 PDF</button>
+</div>
+
+<div class="brochure">
+
+  <section class="page cover">
+    <div class="page-inner">
+      <div class="topbar">
+        <div class="logo">AI<span>Conform</span></div>
+        <div class="muted-light">Compliance Services · Product Brochure</div>
+      </div>
+
+      <div class="eyebrow light">AI-Powered Compliance Services</div>
+      <h1 class="cover-title">AI 驱动合规，<br>帮助 <em>出海企业</em> 自信进入全球市场</h1>
+      <p class="cover-sub">
+        AIConform 将 AI 自动化能力、海外专业审计资源与数据隐私治理经验结合，为中国企业和全球化团队提供覆盖认证、数据保护、AI 治理与安全测试的端到端合规服务。
+        我们尤其适合 AI+硬件设备、SaaS、App、平台型产品以及正在拓展欧美市场的企业。
+      </p>
+
+      <div class="pill-row">
+        <span class="pill">SOC 2 / ISO 27001 / ISO 42001</span>
+        <span class="pill">GDPR / CCPA / HIPAA 隐私风险扫描</span>
+        <span class="pill">EU AI Act / NIST AI RMF</span>
+        <span class="pill">渗透测试 / 漏洞扫描</span>
+        <span class="pill">律师事务所联合服务</span>
+        <span class="pill">适配出海、融资、招投标与大客户准入</span>
+      </div>
+
+      <div class="metric-row">
+        <div class="metric-card"><div class="metric-num">30–60%</div><div class="metric-label">审计周期缩短</div></div>
+        <div class="metric-card"><div class="metric-num">25–50%</div><div class="metric-label">合规成本下降</div></div>
+        <div class="metric-card"><div class="metric-num">15+</div><div class="metric-label">支持国际框架与法规</div></div>
+        <div class="metric-card"><div class="metric-num">24/7</div><div class="metric-label">持续监控与风险发现</div></div>
+        <div class="metric-card"><div class="metric-num">100%</div><div class="metric-label">审计材料可追溯</div></div>
+        <div class="metric-card"><div class="metric-num">自动化</div><div class="metric-label">合规报告与证据生成</div></div>
+      </div>
+
+      <div class="footer-bar">
+        <div>Professional Product Brochure · 2026</div>
+        <div>AIConform · San Jose, California</div>
+      </div>
+      <div class="page-no">01</div>
+    </div>
+  </section>
+
+  <section class="page page-tight">
+    <div class="page-inner">
+      <div class="page-head">
+        <div class="brand">AI<span>Conform</span></div>
+        <div>Overview & Positioning</div>
+      </div>
+
+      <div class="eyebrow">Company Overview</div>
+      <hr>
+      <h2 class="section-title">不仅帮助企业通过审计，<em>更帮助企业建立可持续的全球合规能力</em></h2>
+      <hr>
+      <p class="section-sub">
+        AIConform 面向需要进入海外市场、服务大型客户或处理敏感数据的企业，提供从准备、差距分析、整改、取证到审计交付的完整服务。除认证项目外，我们还提供数据隐私扫描与整改建议，帮助企业识别 GDPR、CCPA/CPRA、HIPAA 等法规相关风险，并为出海场景建立更稳健的数据治理能力。
+      </p>
+      <hr>
+      <p class="section-sub">
+        我们通过 AI 驱动的数据资产发现、风险优先级排序和自动化证据收集，缩短准备周期并减少手工复核。结合本地化项目管理与海外审计专家支持，帮助企业在多语言、多法域环境下更高效推进合规落地。
+      </p>
+     
+      <div class="hero-stat-band">
+        <div class="item"><div class="num">认证</div><div class="txt">SOC 2、ISO 27001、ISO 42001 等端到端项目支持</div></div>
+        <div class="item"><div class="num">隐私</div><div class="txt">识别 PII / PHI / 敏感数据与跨境数据流风险</div></div>
+        <div class="item"><div class="num">整改</div><div class="txt">提供制度、流程、配置与技术层面的修复方案</div></div>
+      </div>
+    
+
+      <div class="grid-2">
+        <div class="panel soft">
+          <div class="panel-title">我们为哪些企业创造价值</div>
+          <div class="bullet-list">
+            <div class="bullet"><div class="dot">1</div><div class="text"><strong>出海企业：</strong>面向欧美客户销售 SaaS、App、智能设备或 AI 产品，需要满足企业采购、法律和安全审查要求。</div></div>
+            <div class="bullet"><div class="dot">2</div><div class="text"><strong>AI + 硬件 / AI Agent 企业：</strong>涉及模型治理、数据保护、访问控制、漏洞防护和法规风险控制。</div></div>
+            <div class="bullet"><div class="dot">3</div><div class="text"><strong>融资与大客户准入场景：</strong>需要更快拿到 SOC 2 / ISO 27001 等证明材料，增强客户信任和销售转化。</div></div>
+            <div class="bullet"><div class="dot">4</div><div class="text"><strong>多法域数据处理场景：</strong>需要系统盘点数据资产、识别跨境传输和敏感数据处理义务。</div></div>
+            <div class="bullet"><div class="dot">5</div><div class="text"><strong>跨境数据共享场景：</strong>需要统一管理海外数据流、委托处理与供应链合规风险。</div></div>
+            <div class="bullet"><div class="dot">6</div><div class="text"><strong>合规运营与治理场景：</strong>希望把合规工作嵌入产品、开发和运营节奏，形成长期可复用的治理体系。</div></div>
+          </div>
+        </div>
+
+        <div class="panel dark">
+          <div class="panel-title">AIConform 的差异化</div>
+          <div class="bullet-list">
+            <div class="bullet"><div class="dot">✓</div><div class="text">AI 自动化 + 人工专家双轮驱动，减少重复性取证、追踪和人工整理。</div></div>
+            <div class="bullet"><div class="dot">✓</div><div class="text">不仅做“合规咨询”，还提供落地整改支持，帮助客户把要求真正落实到流程和系统中。</div></div>
+            <div class="bullet"><div class="dot">✓</div><div class="text">支持认证、隐私、AI 治理、安全测试与律师协同，避免多供应商反复切换。</div></div>
+            <div class="bullet"><div class="dot">✓</div><div class="text">适合中国团队沟通和出海需求，理解出海企业在语言、流程和市场标准上的实际痛点。</div></div>
+            <div class="bullet"><div class="dot">✓</div><div class="text">基于风险优先级的审计计划，帮助企业聚焦最关键控制点。</div></div>
+            <div class="bullet"><div class="dot">✓</div><div class="text">提供中文项目经理与海外审计专家联动，降低跨文化沟通成本。</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="page-no">02</div>
+    </div>
+  </section>
+
+  <section class="page">
+    <div class="page-inner">
+      <div class="page-head">
+        <div class="brand">AI<span>Conform</span></div>
+        <div>Platform & Dashboard</div>
+      </div>
+
+      <div class="eyebrow">Compliance Platform</div>
+      <h2 class="section-title">统一的实时合规监控平台</h2>
+      <p class="section-sub">把认证进度、风险等级、证据收集和整改状态统一到一个清晰的界面中，便于管理层、工程团队和审计方共享视图、快速协作。</p>
+
+      <div class="dashboard">
+        <div class="dash-head">
+          <div class="dots"><span style="background:#ff5f57"></span><span style="background:#febc2e"></span><span style="background:#28c840"></span></div>
+          <div>AIConform · Compliance Overview</div>
+          <div class="live">● LIVE</div>
+        </div>
+        <div class="dash-body">
+          <div class="kpi-grid">
+            <div class="kpi"><div class="kpi-label">Overall Compliance</div><div class="kpi-value green">87%</div><div class="kpi-note">合规状态持续提升</div></div>
+            <div class="kpi"><div class="kpi-label">Open Risks</div><div class="kpi-value amber">12</div><div class="kpi-note">优先处理高风险事项</div></div>
+            <div class="kpi"><div class="kpi-label">Evidence Ready</div><div class="kpi-value cyan">94%</div><div class="kpi-note">审计材料自动归集</div></div>
+            <div class="kpi"><div class="kpi-label">Critical Issues</div><div class="kpi-value red">2</div><div class="kpi-note">需立即整改</div></div>
+          </div>
+
+          <div class="dash-grid">
+            <div class="widget">
+              <div class="widget-title">Framework Progress</div>
+              <div class="prog-item"><div class="prog-top"><span>SOC 2 Type II</span><span>91%</span></div><div class="prog-bar"><div class="prog-fill" style="width:91%;background:linear-gradient(90deg,#1455A4,#2E8FE8)"></div></div></div>
+              <div class="prog-item"><div class="prog-top"><span>ISO 27001</span><span>78%</span></div><div class="prog-bar"><div class="prog-fill" style="width:78%;background:linear-gradient(90deg,#0F9B8E,#00C4D4)"></div></div></div>
+              <div class="prog-item"><div class="prog-top"><span>GDPR / CCPA</span><span>85%</span></div><div class="prog-bar"><div class="prog-fill" style="width:85%;background:linear-gradient(90deg,#7C3AED,#A78BFA)"></div></div></div>
+              <div class="prog-item"><div class="prog-top"><span>EU AI Act</span><span>62%</span></div><div class="prog-bar"><div class="prog-fill" style="width:62%;background:linear-gradient(90deg,#F97316,#FBBF24)"></div></div></div>
+              <div class="prog-item"><div class="prog-top"><span>ISO 42001</span><span>55%</span></div><div class="prog-bar"><div class="prog-fill" style="width:55%;background:linear-gradient(90deg,#EF4444,#F97316)"></div></div></div>
+            </div>
+
+            <div class="widget">
+              <div class="widget-title">Risk Heatmap</div>
+              <div class="heatmap">
+                <div class="low"></div><div class="none"></div><div class="med"></div><div class="high"></div><div class="none"></div><div class="crit"></div>
+                <div class="none"></div><div class="med"></div><div class="med"></div><div class="none"></div><div class="high"></div><div class="high"></div>
+                <div class="low"></div><div class="low"></div><div class="none"></div><div class="med"></div><div class="low"></div><div class="none"></div>
+                <div class="high"></div><div class="none"></div><div class="low"></div><div class="low"></div><div class="med"></div><div class="low"></div>
+                <div class="none"></div><div class="med"></div><div class="high"></div><div class="none"></div><div class="low"></div><div class="low"></div>
+                <div class="low"></div><div class="low"></div><div class="none"></div><div class="med"></div><div class="none"></div><div class="low"></div>
+              </div>
+              <div class="legend">
+                <span><i style="background:rgba(239,68,68,.88)"></i>严重</span>
+                <span><i style="background:rgba(239,68,68,.56)"></i>高危</span>
+                <span><i style="background:rgba(245,158,11,.54)"></i>中危</span>
+                <span><i style="background:rgba(34,197,94,.36)"></i>低危</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mini-grid">
+            <div class="widget">
+              <div class="widget-title">Top Findings</div>
+              <div class="mini-list">
+                <div class="mini-item"><span>S3 存储桶公开访问</span><span class="sev red">严重</span></div>
+                <div class="mini-item"><span>API 密钥存储未加密</span><span class="sev red">严重</span></div>
+                <div class="mini-item"><span>TLS 配置过旧</span><span class="sev orange">高危</span></div>
+                <div class="mini-item"><span>日志审计覆盖不足</span><span class="sev orange">高危</span></div>
+                <div class="mini-item"><span>HTTP 响应头缺失</span><span class="sev green">低危</span></div>
+              </div>
+            </div>
+            <div class="widget">
+              <div class="widget-title">Why It Matters</div>
+              <div class="mini-list">
+                <div class="mini-item"><span>统一审计视图</span><span>管理层可见</span></div>
+                <div class="mini-item"><span>证据自动归档</span><span>减少人工</span></div>
+                <div class="mini-item"><span>整改任务闭环</span><span>明确责任人</span></div>
+                <div class="mini-item"><span>审计协作提效</span><span>降低沟通成本</span></div>
+                <div class="mini-item"><span>持续监控</span><span>不仅一次性通过</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-no">03</div>
+    </div>
+  </section>
+
+  <section class="page">
+    <div class="page-inner">
+      <div class="page-head">
+        <div class="brand">AI<span>Conform</span></div>
+        <div>Privacy Risk Scanning</div>
+      </div>
+
+      <div class="eyebrow">Data Privacy Services</div>
+      <h2 class="section-title">数据隐私扫描与整改支持</h2>
+      <p class="section-sub">面向处理用户数据、健康数据或跨境数据的企业，AIConform 提供数据发现、隐私风险识别、法规映射和整改建议，帮助客户更系统地满足 GDPR、CCPA/CPRA、HIPAA 等要求。</p>
+
+      <div class="split-strong">
+        <div class="deep-card">
+          <h3>我们做什么</h3>
+          <p>把隐私合规从“只看法律条文”转向“数据、系统、流程和权限的真实治理”。</p>
+          <div class="deep-list">
+            <div>自动扫描并识别 PII、PHI、财务数据及其他敏感信息分布情况</div>
+            <div>梳理数据流、存储位置、访问路径与第三方处理方</div>
+            <div>映射 GDPR、CCPA/CPRA、HIPAA 等法规要求，识别高风险处理场景</div>
+            <div>输出整改建议：制度更新、权限治理、数据最小化、留存策略、访问审计与供应商管理</div>
+          </div>
+        </div>
+
+        <div class="panel soft">
+          <div class="panel-title">特别适合的业务场景</div>
+          <div class="bullet-list">
+            <div class="bullet"><div class="dot">A</div><div class="text"><strong>AI + 硬件设备：</strong>设备端、云端和 App 端同时采集数据，涉及多端协同与敏感信息保护。</div></div>
+            <div class="bullet"><div class="dot">B</div><div class="text"><strong>App / SaaS / 平台产品：</strong>需要识别 cookies、账号、日志、地理位置、营销数据和跨境流动风险。</div></div>
+            <div class="bullet"><div class="dot">C</div><div class="text"><strong>医疗与健康科技：</strong>关注 PHI、访问控制、留存策略、第三方处理和 HIPAA 相关义务。</div></div>
+            <div class="bullet"><div class="dot">D</div><div class="text"><strong>出海企业：</strong>帮助企业更早识别合规短板，避免进入欧美市场后再被动补救。</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-grid-4">
+        <div class="info-card soft"><div class="icon-box">🔎</div><div class="info-title">敏感数据发现</div><div class="info-text">发现个人信息、健康信息、支付数据、日志与元数据风险点。</div><div class="tiny-tags"><span>PII</span><span>PHI</span><span>Data Discovery</span></div></div>
+        <div class="info-card soft"><div class="icon-box">🗺️</div><div class="info-title">数据流映射</div><div class="info-text">梳理采集、传输、存储、共享与删除流程，形成更清晰的数据资产视图。</div><div class="tiny-tags"><span>ROPA</span><span>Data Flow</span></div></div>
+        <div class="info-card soft"><div class="icon-box">⚖️</div><div class="info-title">法规映射</div><div class="info-text">把技术事实映射到 GDPR、CCPA/CPRA、HIPAA 等义务条款，明确风险来源。</div><div class="tiny-tags"><span>GDPR</span><span>CCPA</span><span>HIPAA</span></div></div>
+        <div class="info-card soft"><div class="icon-box">🛠️</div><div class="info-title">整改建议</div><div class="info-text">给出可以执行的整改方案，包括权限、流程、政策、供应商和系统配置调整。</div><div class="tiny-tags"><span>Remediation</span><span>Controls</span></div></div>
+      </div>
+      <div class="page-no">04</div>
+    </div>
+  </section>
+
+  <section class="page">
+    <div class="page-inner">
+      <div class="page-head">
+        <div class="brand">AI<span>Conform</span></div>
+        <div>Services Portfolio</div>
+      </div>
+
+      <div class="eyebrow">What We Offer</div>
+      <h2 class="section-title">端到端合规与安全服务体系</h2>
+      <p class="section-sub">我们既支持一次性认证项目，也支持持续合规运营；既覆盖安全与隐私框架，也覆盖 AI 治理与系统安全测试。</p>
+
+      <div class="card-grid-3">
+        <div class="info-card"><div class="icon-box">📋</div><div class="info-title">准备与差距分析</div><div class="info-text">评估当前状态、控制缺口、政策缺失和取证难点，形成优先级清晰的整改路线图。</div><div class="tiny-tags"><span>Gap Assessment</span><span>Roadmap</span></div></div>
+        <div class="info-card"><div class="icon-box">🧩</div><div class="info-title">制度与控制设计</div><div class="info-text">协助建立或优化政策、流程、权限管理、供应商管理、变更管理和审计机制。</div><div class="tiny-tags"><span>Policies</span><span>Controls</span></div></div>
+        <div class="info-card"><div class="icon-box">🤖</div><div class="info-title">证据收集自动化</div><div class="info-text">通过集成平台自动拉取日志、权限、配置和操作记录，减少审计准备的人工工作量。</div><div class="tiny-tags"><span>Evidence</span><span>Automation</span></div></div>
+        <div class="info-card"><div class="icon-box">🧾</div><div class="info-title">审计协同与交付</div><div class="info-text">协助客户完成审计准备、问题响应、材料补充和项目推进，直至审计报告出具。</div><div class="tiny-tags"><span>SOC 2</span><span>ISO</span></div></div>
+        <div class="info-card"><div class="icon-box">🛡️</div><div class="info-title">系统安全测试</div><div class="info-text">提供漏洞扫描、渗透测试、云配置审计、AI Agent / LLM 对抗安全测试等支持。</div><div class="tiny-tags"><span>Pentest</span><span>Vuln Scan</span><span>AI Security</span></div></div>
+        <div class="info-card"><div class="icon-box">🔄</div><div class="info-title">持续合规运营</div><div class="info-text">适用于已拿到认证后仍需持续维护控制、更新证据、跟踪风险并应对客户问卷的企业。</div><div class="tiny-tags"><span>Continuous Compliance</span><span>vCISO</span></div></div>
+      </div>
+
+      <div class="panel soft" style="margin-top:10mm;">
+        <div class="panel-title">AI 微代理能力示例</div>
+        <div class="card-grid-4" style="margin-top:8px;">
+          <div class="info-card soft"><div class="info-title">访问控制复核</div><div class="info-text">自动识别离职员工、超权账户和长期未用权限。</div></div>
+          <div class="info-card soft"><div class="info-title">供应商风险评估</div><div class="info-text">跟踪第三方安全问卷、合同与数据处理义务。</div></div>
+          <div class="info-card soft"><div class="info-title">员工入职检查</div><div class="info-text">核查账号、权限、培训与背景流程是否完成。</div></div>
+          <div class="info-card soft"><div class="info-title">证据验证</div><div class="info-text">自动核对日志、配置和文档版本是否满足控制要求。</div></div>
+        </div>
+      </div>
+      <div class="page-no">05</div>
+    </div>
+  </section>
+
+  <section class="page">
+    <div class="page-inner">
+      <div class="page-head">
+        <div class="brand">AI<span>Conform</span></div>
+        <div>Frameworks & Customers</div>
+      </div>
+
+      <div class="eyebrow">Supported Frameworks</div>
+      <hr>
+  
+      <h2 class="section-title">覆盖主流安全、隐私与 AI 治理框架</h2>
+      <p class="section-sub">适合正在拓展海外市场、需要通过客户安全审查、融资尽调或建立成熟治理体系的技术公司。
+AIConform 通过统一的控制框架与方法论，将安全、隐私与 AI 治理要求整合到企业的技术与运营体系中，减少多框架并行带来的复杂度，帮助企业在不同市场与监管环境下保持一致的合规与风险管理能力。</p>
+
+      <div class="framework-grid">
+        <div class="framework"><div class="label">SECURITY</div><div class="name">SOC 2</div><div class="desc">适合 SaaS 与技术企业建立对外信任，支持企业销售与客户准入。</div></div>
+        <div class="framework"><div class="label">SECURITY</div><div class="name">ISO 27001</div><div class="desc">国际通行的信息安全管理体系，适合跨境和大客户场景。</div></div>
+        <div class="framework"><div class="label">AI GOVERNANCE</div><div class="name">ISO 42001</div><div class="desc">面向 AI 系统治理、生命周期管理与风险控制。</div></div>
+        <div class="framework"><div class="label">AI GOVERNANCE</div><div class="name">EU AI Act</div><div class="desc">适用于进入欧洲市场或涉及高风险 AI 应用的团队。</div></div>
+        <div class="framework"><div class="label">PRIVACY</div><div class="name">GDPR</div><div class="desc">适用于处理欧盟居民个人数据的组织和跨境业务。</div></div>
+        <div class="framework"><div class="label">PRIVACY</div><div class="name">CCPA / CPRA</div><div class="desc">适合美国消费者数据处理和隐私透明度要求场景。</div></div>
+        <div class="framework"><div class="label">PRIVACY</div><div class="name">HIPAA</div><div class="desc">面向健康科技、医疗数据和 PHI 管理相关业务。</div></div>
+        <div class="framework"><div class="label">RISK</div><div class="name">NIST AI RMF / CSF</div><div class="desc">帮助建立 AI 风险治理和更系统的网络安全管理方法。</div></div>
+      </div>
+
+      <div class="grid-2" style="margin-top:10mm;">
+        <div class="panel soft">
+          <div class="panel-title">典型客户画像</div>
+          <div class="bullet-list">
+            <div class="bullet"><div class="dot">•</div><div class="text">高成长 SaaS / App 企业，希望拿下美国或欧洲大客户。</div></div>
+            <div class="bullet"><div class="dot">•</div><div class="text">AI + 硬件 / 智能设备企业，需要管理设备、App 和云端的多端数据风险。</div></div>
+            <div class="bullet"><div class="dot">•</div><div class="text">医疗科技 / 健康数据企业，需要同时考虑安全、隐私与审计要求。</div></div>
+            <div class="bullet"><div class="dot">•</div><div class="text">正在融资、上市前准备或进入海外渠道的企业，需要更体系化的治理能力展示。</div></div>
+          </div>
+        </div>
+        <div class="panel soft">
+          <div class="panel-title">为什么特别适合出海企业</div>
+          <div class="bullet-list">
+            <div class="bullet"><div class="dot">1</div><div class="text">把技术、管理和法律要求翻译成企业可执行的整改动作。</div></div>
+            <div class="bullet"><div class="dot">2</div><div class="text">帮助企业在欧美客户问卷、采购审查和安全审查中更从容地展示能力。</div></div>
+            <div class="bullet"><div class="dot">3</div><div class="text">更早发现数据隐私风险，减少进入目标市场后被动修补的成本。</div></div>
+            <div class="bullet"><div class="dot">4</div><div class="text">支持多框架协同，避免各部门分头应付不同标准造成重复投入。</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="page-no">06</div>
+    </div>
+  </section>
+
+  <section class="page">
+    <div class="page-inner">
+      <div class="page-head">
+        <div class="brand">AI<span>Conform</span></div>
+        <div>Delivery Model & ROI</div>
+      </div>
+
+      <div class="eyebrow">How We Work</div>
+      <h2 class="section-title">高协作、低摩擦的交付方式</h2>
+      <p class="section-sub">我们通过统一平台、固定项目节奏和专家协同机制，让客户团队能在不影响业务推进的前提下完成合规项目。</p>
+
+      <div class="card-grid-4">
+        <div class="info-card soft"><div class="icon-box">🤝</div><div class="info-title">联合项目管理</div><div class="info-text">业务、技术、法务与外部审计在统一节奏下协同推进。</div></div>
+        <div class="info-card soft"><div class="icon-box">📌</div><div class="info-title">清晰责任分工</div><div class="info-text">每个控制项、证据项和整改动作都有责任人与状态跟踪。</div></div>
+        <div class="info-card soft"><div class="icon-box">⚙️</div><div class="info-title">自动化优先</div><div class="info-text">优先通过系统集成和 AI 自动化降低重复劳动和项目拖延。</div></div>
+        <div class="info-card soft"><div class="icon-box">📣</div><div class="info-title">对外可展示</div><div class="info-text">帮助客户把治理能力转化为更可被客户理解和认可的信任资产。</div></div>
+      </div>
+
+      <div class="grid-2" style="margin-top:10mm;grid-template-columns: 0.85fr 1.15fr;">
+  <div class="panel">
+    <div class="panel-title">对客户的直接商业价值</div>
+    <div class="bullet-list">
+      <div class="bullet"><div class="dot">✓</div><div class="text"><strong>更快成交：</strong>缩短客户安全审查与供应商准入周期。</div></div>
+      <div class="bullet"><div class="dot">✓</div><div class="text"><strong>更低成本：</strong>减少外部顾问、内部协调和重复取证的浪费。</div></div>
+      <div class="bullet"><div class="dot">✓</div><div class="text"><strong>更强信任：</strong>让安全、隐私和 AI 治理成为商业加分项，而不是阻碍项。</div></div>
+      <div class="bullet"><div class="dot">✓</div><div class="text"><strong>更可持续：</strong>建立持续监控和运维能力，而不是“一次性通过”。</div></div>
+      
+      <!-- 新增 -->
+      <div class="bullet"><div class="dot">✓</div><div class="text"><strong>更高转化：</strong>提升海外客户、渠道与合作伙伴的信任转化率。</div></div>
+      <div class="bullet"><div class="dot">✓</div><div class="text"><strong>更低风险：</strong>提前识别安全与隐私问题，减少合规事故与法律风险。</div></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-title">典型 ROI 指标</div>
+    <div class="card-grid-2" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:8px;">
+            <!-- 新增一整行 -->
+      <div class="info-card soft">
+        <div class="info-title" style="font-size: 26px;color:var(--blue);">更稳</div>
+        <div class="info-text">降低安全与隐私合规风险暴露</div>
+      </div>
+
+      <div class="info-card soft">
+        <div class="info-title" style="font-size: 26px;color:var(--blue);">更高</div>
+        <div class="info-text">提升客户信任与长期合作价值</div>
+      </div>
+      <div class="info-card soft">
+        <div class="info-title" style="font-size: 26px;color:var(--blue);">30–60%</div>
+        <div class="info-text">审计准备与项目周期缩短</div>
+      </div>
+
+      <div class="info-card soft">
+        <div class="info-title" style="font-size: 26px;color:var(--blue);">25–50%</div>
+        <div class="info-text">合规项目整体成本优化</div>
+      </div>
+
+      <div class="info-card soft">
+        <div class="info-title" style="font-size: 26px;color:var(--blue);">持续</div>
+        <div class="info-text">证据、风险和整改状态可追踪</div>
+      </div>
+
+      <div class="info-card soft">
+        <div class="info-title" style="font-size: 26px;color:var(--blue);">更快</div>
+        <div class="info-text">响应大客户、投资人和审计要求</div>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+      <div class="page-no">07</div>
+    </div>
+  </section>
+
+  <section class="page">
+    <div class="page-inner">
+      <div class="page-head">
+        <div class="brand">AI<span>Conform</span></div>
+        <div>Methodology & Contact</div>
+      </div>
+
+      <div class="eyebrow">Delivery Process</div>
+      <h2 class="section-title">五步交付流程：从评估到报告交付</h2>
+      <p class="section-sub">从初始评估到整改、取证、审计协作和持续运营，AIConform 提供完整陪跑式支持，帮助客户形成长期可复用的治理体系。</p>
+
+      <div class="timeline">
+        <div class="step"><div class="step-num">01</div><h4>Assess</h4><p>梳理业务、系统、数据流和项目边界，明确目标框架与范围。</p></div>
+        <div class="step"><div class="step-num">02</div><h4>Identify</h4><p>开展差距分析、风险识别和优先级排序，形成整改路线图。</p></div>
+        <div class="step"><div class="step-num">03</div><h4>Address</h4><p>落实控制、政策、权限、日志与流程整改，并建立取证节奏。</p></div>
+        <div class="step"><div class="step-num">04</div><h4>Prepare</h4><p>整合证据、补齐材料、演练审计问答，提升项目成熟度。</p></div>
+        <div class="step"><div class="step-num">05</div><h4>Report</h4><p>协同完成审计流程，推动项目至审计报告出具，并支持后续持续运营。</p></div>
+      </div>
+
+      <div class="contact-panel">
+<div class="contact-panel">
+  <div class="contact-title">让合规成为出海的竞争优势</div>
+  <div class="contact-sub">
+    无论您是正在准备 SOC 2 / ISO 27001，还是希望识别数据隐私风险、建立 AI 治理体系，AIConform 都可以帮助您用更专业、更高效的方式完成项目。
+
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-box">
+      <div class="hd">联系方式</div>
+      <div class="bd">
+        hlu@aiconforms.com<br>
+        www.aiconform.ai<br>
+        San Jose, CA 95134, USA
+      </div>
+      <a class="cta" href="https://www.aiconform.ai/">预约咨询</a>
+    </div>
+
+    <div class="contact-box">
+      <div class="hd">我们还支持</div>
+      <div class="bd">
+        ISO 27701 · PCI DSS · DORA · NIST CSF · AI 风险治理 · 云安全配置审计 · 第三方安全问卷支持 ·
+        数据隐私扫描 · 跨境数据合规
+      </div>
+    </div>
+  </div>
+
+  <!-- 轻量补充一行（关键填充空间） -->
+  <div class="contact-box" style="margin-top:10px;">
+    <div class="hd">适用企业</div>
+    <div class="bd">
+      出海 SaaS / App 企业 · AI + 硬件设备公司 · 医疗健康科技企业 · 平台型数据业务 ·
+      需要通过客户安全审查或融资尽调的技术团队
+    </div>
+  </div>
+
+  <div class="fineprint">
+    <div>© 2026 AIConform. 保留所有权利。</div>
+    <div>AI 驱动合规 · 更高效 · 更可靠 · 可认证</div>
+  </div>
+</div>
+
+  <!-- <div class="fineprint">
+    <div>© 2026 AIConform. All Rights Reserved.</div>
+    <div>AI-Powered Compliance · Faster · Smarter · Certifiable</div>
+  </div> -->
+</div>
+      <div class="page-no">08</div>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
